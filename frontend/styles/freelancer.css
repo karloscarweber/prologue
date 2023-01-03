@@ -1,0 +1,223 @@
+/* freelancer.css */
+
+
+/* Typography  */
+
+
+	/* MD Primer */
+	@font-face {
+		font-family: 'MDPrimer';
+		font-style: normal;
+		font-weight: 600;
+		font-display: swap;
+		src: url("../fonts/mdprimer/MDPrimer-Bold.woff2?v=99.99") format("woff2"), url("../fonts/mdprimer/MDPrimer-Bold.woff?v=99.99") format("woff");
+	}
+
+	.typeface-mdprimer { /* for just using the typeface */
+		font-family: 'MDPrimer', -apple-system, Helvetica, Arial, sans-serif;
+	}
+
+
+	/* MD System */
+	@font-face {
+		font-family: 'MDSystem'; font-style: normal; font-display: swap;
+		font-weight: 400;
+		src: url("../fonts/mdsystem/MDSystem-Regular.woff2?v=99.99") format("woff2"), url("../fonts/mdsystem/MDSystem-Regular.woff?v=99.99") format("woff");
+	}
+	@font-face {
+		font-family: 'MDSystem'; font-style: italic; font-display: swap;
+		font-weight: 400;
+		src: url("../fonts/mdsystem/MDSystem-Italic.woff2?v=99.99") format("woff2"), url("../fonts/mdsystem/MDSystem-Italic.woff?v=99.99") format("woff");
+	}
+
+	@font-face {
+		font-family: 'MDSystem'; font-style: normal; font-display: swap;
+		font-weight: 500;
+		src: url("../fonts/mdsystem/MDSystem-Medium.woff2?v=99.99") format("woff2"), url("../fonts/mdsystem/MDSystem-Medium.woff?v=99.99") format("woff");
+	}
+	@font-face {
+		font-family: 'MDSystem'; font-style: italic; font-display: swap;
+		font-weight: 500;
+		src: url("../fonts/mdsystem/MDSystem-MediumItalic.woff2?v=99.99") format("woff2"), url("../fonts/mdsystem/MDSystem-MediumItalic.woff?v=99.99") format("woff");
+	}
+
+	@font-face {
+		font-family: 'MDSystem'; font-style: normal; font-display: swap;
+		font-weight: 600;
+		src: url("../fonts/mdsystem/MDSystem-Bold.woff2?v=99.99") format("woff2"), url("../fonts/mdsystem/MDSystem-Bold.woff?v=99.99") format("woff");
+	}
+	@font-face {
+		font-family: 'MDSystem'; font-style: italic; font-display: swap;
+		font-weight: 600;
+		src: url("../fonts/mdsystem/MDSystem-BoldItalic.woff2?v=99.99") format("woff2"), url("../fonts/mdsystem/MDSystem-BoldItalic.woff?v=99.99") format("woff");
+	}
+
+	@font-face {
+		font-family: 'MDSystem'; font-style: normal; font-display: swap;
+		font-weight: 700;
+		src: url("../fonts/mdsystem/MDSystem-Dark.woff2?v=99.99") format("woff2"), url("../fonts/mdsystem/MDSystem-Dark.woff?v=99.99") format("woff");
+	}
+	@font-face {
+		font-family: 'MDSystem'; font-style: italic; font-display: swap;
+		font-weight: 700;
+		src: url("../fonts/mdsystem/MDSystem-DarkItalic.woff2?v=99.99") format("woff2"), url("../fonts/mdsystem/MDSystem-DarkItalic.woff?v=99.99") format("woff");
+	}
+
+	@font-face {
+		font-family: 'MDSystem'; font-style: normal; font-display: swap;
+		font-weight: 800;
+		src: url("../fonts/mdsystem/MDSystem-Heavy.woff2?v=99.99") format("woff2"), url("../fonts/mdsystem/MDSystem-Heavy.woff?v=99.99") format("woff");
+	}
+	@font-face {
+		font-family: 'MDSystem'; font-style: italic; font-display: swap;
+		font-weight: 800;
+		src: url("../fonts/mdsystem/MDSystem-Heavy.woff2?v=99.99") format("woff2"), url("../fonts/mdsystem/MDSystem-Heavy.woff?v=99.99") format("woff");
+	}
+
+	.typeface-mdsystem { /* for just using the typeface */
+		font-family: 'MDSystem', -apple-system, Helvetica, Arial, sans-serif;
+	}
+
+	/* MD Nichrome */
+	@font-face {
+		font-family: 'MDNichrome';
+		font-style: normal;
+		font-weight: 700;
+		font-display: swap;
+		src: url("../fonts/mdnichrome/MDNichrome-Black.woff2?v=99.99") format("woff2"), url("../fonts/mdnichrome/MDNichrome-Black.woff?v=99.99") format("woff");
+	}
+
+	.typeface-mdprimer { /* for just using the typeface */
+		font-family: 'MDNichrome', -apple-system, Helvetica, Arial, sans-serif;
+	}
+
+/* Headings */
+
+.heading-one, h1 {
+	font-family: 'MDPrimer', -apple-system, Helvetica, Arial, sans-serif;
+	font-weight: 600;
+	font-size: 5rem;
+	line-height: 5rem;
+	letter-spacing:-0.04rem;
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.heading-two, h2 {
+	font-family: 'MDPrimer', -apple-system, Helvetica, Arial, sans-serif;
+	font-weight: 600;
+	font-size: 3.75rem;
+	line-height: 3.75rem;
+	letter-spacing:-0.03rem;
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+
+.excerpt {
+	font-family: 'MDSystem', -apple-system, Helvetica, Arial, sans-serif;
+	font-weight: 600;
+	font-size: 1.5rem;
+	line-height: 2rem;
+	letter-spacing:-0.012rem;
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+
+.paragraph {
+	font-family: 'MDSystem', -apple-system, Helvetica, Arial, sans-serif;
+	font-weight: 400;
+	font-size: 1.5rem;
+	line-height: 2rem;
+	letter-spacing:-0.012rem;
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+
+.logo-font { /* Used for the logo in the header. */
+	font-family: 'MDNichrome', -apple-system, Helvetica, Arial, sans-serif;
+	font-weight: 700;
+	font-size: 1.875rem;
+	line-height: 2rem;
+	margin-top: 1em;
+	letter-spacing:1px;
+	margin-bottom: 1em;
+}
+
+.ostentatious-font { /* Used for the logo in the header. */
+	font-family: 'MDNichrome', -apple-system, Helvetica, Arial, sans-serif;
+	font-weight: 700;
+	font-size: 11.25rem;
+	line-height: 12rem;
+	letter-spacing:40px;
+	color: #f70000;
+	color: color(display-p3 0.968 0 0 / 1);
+	margin:0;
+	position: absolute;
+	top: 0;
+	left:50%;
+	margin-left:-50%;
+	width: 100%;
+	height: 12rem;
+	/* z-index: -1000; */
+	transform: translateX(1rem);
+
+}
+
+.row.horsey {
+	overflow:hidden;
+}
+
+.ostentatious-font-container {
+	overflow: hidden;
+	position: absolute;
+	margin:0;
+	top: 50%;
+	margin-top:-3.5em;
+	left:0;
+	width: 200vw;
+	max-width: 200vw;
+	height: 12rem;
+	z-index: -1000;
+	left: 50%;
+	margin-left: -100%;
+}
+
+.knight {
+	width: 572.38px;
+	height: auto;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.flavor-text-1 {
+	background: url("/images/to-fight-thine-type-image.svg");
+	background-position: center center;
+	text-indent: -10000px;
+	text-color: transparent;
+	font-size: 0px;
+	display:block;
+	position: relative;
+	height: 125px;
+	width: 626px;
+	margin-left:auto;
+	margin-right:auto;
+}
+.flavor-text-2 {
+	background: url("/images/a-sellsword-type-image.svg");
+	background-position: center center;
+	text-indent: -10000px;
+	text-color: transparent;
+	font-size: 0px;
+	display:block;
+	position: relative;
+	height: 190px;
+	width: 442px;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+/* Components */
+
+.button {
+
+}

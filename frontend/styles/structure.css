@@ -1,0 +1,31 @@
+/* The structure file */
+.page { /* contains the whole page. Able to be replaced */
+	display:flex;
+	flex-direction: column;
+	position: relative;
+	width: 100%;
+	height: auto;
+}
+
+.row {
+	display:flex;
+	flex-direction: column;
+	position: relative;
+	width: 100%;
+	height: auto;
+	align-items: center;
+}
+
+/* Text-alignment and stuff */
+.ta-left { text-align:left; }
+.ta-right { text-align:right; }
+.ta-center { text-align:center; }
+.ta-justify { text-align:justify; }
+
+/* typeface measure */
+.full-measure { width: 100%; max-width: 61.25rem; } /* 980px */
+.half-measure { width: 100%; max-width: 61.25rem; } /* 490px */
+.wide-measure { width: 100%; max-width: 40rem; } /* 640px */
+.measure { width: 100%; max-width: 32.5rem; } /* 520px */
+.narrow-measure { width: 100%; max-width: 20rem; } /* 320px */
+
