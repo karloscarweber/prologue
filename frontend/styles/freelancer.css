@@ -126,6 +126,8 @@
 	letter-spacing:-0.012rem;
 	margin-top: 0em;
 	margin-bottom: 1em;
+	opacity: 0.8;
+	color: #E7E7E7;
 }
 
 .paragraph {
@@ -158,6 +160,19 @@
 	letter-spacing:1px;
 	margin-bottom: 1em;
 }
+
+.title-logo { /* Used for the logo in the header. */
+	font-family: 'MDNichrome', -apple-system, Helvetica, Arial, sans-serif;
+	color: #E7E7E7;
+	font-weight: 700;
+	font-size: 3.75rem;
+	line-height: 4rem;
+	margin-top: -2.25rem; /* On Scroll animate this property lower and lower. */
+	letter-spacing:-0.03rem;
+	margin-bottom: 0.25em;
+	z-index: 1000;
+}
+
 
 .ostentatious-font { /* Used for the logo in the header. */
 	font-family: 'MDNichrome', -apple-system, Helvetica, Arial, sans-serif;
@@ -339,11 +354,31 @@
 	background-repeat: no-repeat;
 }
 
+body {
+	background-color:black;
+	background-image: url("/images/prologue-pattern-dark.jpg");
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+main {
+	background-color: none;
+}
 
 .patterned-row {
-	background-color:black;
-	background-image: url("/images/prologue-pattern.jpg");
-	background-size: cover;
+	display:flex;
+	height: 100vh;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.logo-thing {
+	display:block;
+	width:200px;
+	height:200px;
+	background-image: url("/images/prologue-logo.png");
+	background-size: 200px 200px;
 	background-position: center center;
 	background-repeat: no-repeat;
 }

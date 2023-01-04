@@ -20,7 +20,11 @@
 	padding-bottom: 8rem;
 }
 .row.tall-boy { /* At least as tall as the page. */
-	min-height: 50vh;
+	min-height: 120vh;
+}
+
+.row.darkened {
+	background-color: #0D081D;
 }
 
 /* Giving sections flexbox columns*/

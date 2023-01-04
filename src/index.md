@@ -4,13 +4,13 @@
 layout: default
 ---
 
-<div class="row tall-boy">
-	<h1 class="heading-one ta-center full-measure" style="margin-top:1em;">An Engineering<br>Studio</h1>
-	<h2 class="excerpt ta-center full-measure">Engineering expertise to scale<br>your app and team.</h2>
-	<a class="button button-standard ta-center full-measure" href="#plans">Plans</a>
+<div class="row patterned-row thing tall-boy">
+	<div class="logo-thing parallaxy-animate" parallaxy-options='{"multiplier":"0.300", "direction":"down", "positionType": "relative"}'></div>
+	<h1 class="title-logo ta-center full-measure parallaxy-animate" parallaxy-options='{"multiplier":"0.010", "direction":"up", "positionType": "relative", "attribute" : "margintop"}'>Prologue Productions</h1>
+	<p class="excerpt ta-center full-measure">An Engineering Studio</p>
 </div>
 
-<div class="row horsey vertically-padded">
+<div class="row darkened horsey vertically-padded">
 	<p class="flavor-text-1">To fight thine Enemies employ a</p>
 	<img class="knight" src="/images/clipart-ritter-pferd-illustration-1651441983EID-flipped.png" />
 	<p class="flavor-text-2">A sellsword of the highest quality</p>
@@ -19,19 +19,19 @@ layout: default
 	</div>
 </div>
 
-<div class="row vertically-padded">
-<h2 class="heading-two ta-center">Only Subscriptions</h2>
-<p class="paragraph measure ta-justify">It's like Netflix for building things. I used to do it differently, fixed bid contracts, The back and forth with the client to understand their true needs, Taking any job I could find. Before I figured out it was just a waste of everyone's time.</p>
+<div class="row darkened vertically-padded">
+	<h2 class="heading-two ta-center">Only Subscriptions</h2>
+	<p class="paragraph measure ta-justify">It's like Netflix for building things. I used to do it differently, fixed bid contracts, The back and forth with the client to understand their true needs, Taking any job I could find. Before I figured out it was just a waste of everyone's time.</p>
 
-<p class="paragraph measure ta-justify">Now I only sell montly retainers, and I cut my time up into 40 hour slots. Buy one slot and you have my focus for 1 week per month. I can get a LOT done in a single focused week. </p>
+	<p class="paragraph measure ta-justify">Now I only sell montly retainers, and I cut my time up into 40 hour slots. Buy one slot and you have my focus for 1 week per month. I can get a LOT done in a single focused week. </p>
 
-<blockquote class="quote measure ta-center">"On Netflix I can watch as many movies<br> as I'd like?"</blockquote>
+	<blockquote class="quote measure ta-center">"On Netflix I can watch as many movies<br> as I'd like?"</blockquote>
 
-<p class="paragraph measure ta-justify">Yes, this is true, but how often have you been browsing Netflix and thought it's all sort of meh. There's nothing to watch. Prologue is like that, but just the good stuff. We're great at not just building things that last and can scale, but also building only the stuff we need to build.</p>
+	<p class="paragraph measure ta-justify">Yes, this is true, but how often have you been browsing Netflix and thought it's all sort of meh. There's nothing to watch. Prologue is like that, but just the good stuff. We're great at not just building things that last and can scale, but also building only the stuff we need to build.</p>
 </div>
 
 
-<div class="row vertically-padded">
+<div class="row darkened vertically-padded">
 	<h2 class="heading-two ta-center" id="plans">How Does it work?</h2>
 
 <ul class="paragraph measure special-ordered-list">
@@ -43,7 +43,7 @@ layout: default
 
 </div>
 
-<div class="row vertically-padded">
+<div class="row darkened vertically-padded">
 <section class="columned really-wide" style="padding: 5rem;box-sizing:border-box;">
 	<div>
 		<h2 class="heading-two wide-measure ta-left">development done <em>better</em>, not just different.</h2>
@@ -59,7 +59,7 @@ layout: default
 
 </div>
 
-<div class="row vertically-padded">
+<div class="row darkened vertically-padded">
 <section class="columned full-measure" style="padding: 5rem;box-sizing:border-box;">
 	<div>
 		<div class="iphone-illustration"></div>
