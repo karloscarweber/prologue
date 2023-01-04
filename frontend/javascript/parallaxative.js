@@ -67,7 +67,6 @@ export let parallaxController;
 			if (attribute == "margintop") {
 				paralaxxed[i].style.marginTop = sign + tweenDelta + "rem";
 			} else {
-				console.log(attribute)
 				paralaxxed[i].style.transform = "translateY(" + tweenDelta + "px) translateZ(0)" + defaultRotation;
 				paralaxxed[i].style.webkitTransform = "translateY(" + tweenDelta + "px) translateZ(0)" + defaultRotation;
 			}

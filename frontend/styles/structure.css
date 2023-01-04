@@ -20,7 +20,7 @@
 	padding-bottom: 8rem;
 }
 .row.tall-boy { /* At least as tall as the page. */
-	min-height: 120vh;
+	/* min-height: 120vh; */
 }
 
 .row.darkened {
@@ -33,6 +33,11 @@
 	flex-direction: row;
 	align-items: flex-start;
 	justify-content: space-between;
+}
+@media (max-width: 900px) {
+	.columned {
+		flex-direction: column;
+	}
 }
 
 /* Text-alignment and stuff */

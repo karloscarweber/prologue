@@ -3,7 +3,10 @@
 :root {
 	--body-background: #f8f0e4;
 	--body-color: black;
+	--p3-body-color: black;
 	--heading-color: black;
 	--action-color: #f70000;
-	--p3-action-color: color(display-p3 0.968 0 0 / 1);;
+	--p3-action-color: color(display-p3 0.968 0 0 / 1);
+	--silver-color: #E7E7E7;
+	--p3-silver-color: color(display-p3 0.905 0.905 0.905 / 1);
 }

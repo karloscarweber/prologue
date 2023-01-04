@@ -5,19 +5,30 @@ layout: default
 ---
 
 <div class="row patterned-row thing tall-boy">
-	<div class="logo-thing parallaxy-animate" parallaxy-options='{"multiplier":"0.300", "direction":"down", "positionType": "relative"}'></div>
-	<h1 class="title-logo ta-center full-measure parallaxy-animate" parallaxy-options='{"multiplier":"0.010", "direction":"up", "positionType": "relative", "attribute" : "margintop"}'>Prologue Productions</h1>
+	<div class="logo-thing parallaxy-animate" parallaxy-options='{"multiplier":"0.100", "direction":"down", "positionType": "relative"}'></div>
+	<h1 class="title-logo ta-center full-measure parallaxy-animate" parallaxy-options='{"multiplier":"0.005", "direction":"up", "positionType": "relative", "attribute" : "margintop"}'>Prologue Productions</h1>
 	<p class="excerpt ta-center full-measure">An Engineering Studio</p>
 </div>
 
 <div class="row darkened horsey vertically-padded">
 	<p class="flavor-text-1">To fight thine Enemies employ a</p>
-	<img class="knight" src="/images/clipart-ritter-pferd-illustration-1651441983EID-flipped.png" />
+	<img class="knight" src="/images/white-knight.png" />
 	<p class="flavor-text-2">A sellsword of the highest quality</p>
-	<div class="ostentatious-font-container">
-		<p class="ostentatious-font ta-center">FREELANCER</p>
-	</div>
+	<p class="ostentatious-font ta-center">FREELANCER</p>
 </div>
+
+<div class="row darkened vertically-padded">
+<section class="columned really-wide" style="padding: 5rem;box-sizing:border-box;">
+	<div class="measure">
+		<h2 class="heading-one ta-left withered">An Engineering Studio</h2>
+	</div>
+<div class="measure">
+	<p class="paragraph withered">Focused on building scalable feature rich applications and websites fast. With a very narrow focus on a select few technologies: Ruby, Swift, and the vanilla basics of the web: HTML, CSS, and JavaScript.</p>
+	<p class="paragraph withered">We deliver what takes most teams months in just weeks.</p>
+	<p class="paragraph withered"><a href="#">Book a Call to see if this is a good fit.</a></p>
+</div>
+<!-- <div class="squiggle"></div> -->
+</section>
 
 <div class="row darkened vertically-padded">
 	<h2 class="heading-two ta-center">Only Subscriptions</h2>

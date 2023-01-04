@@ -177,21 +177,24 @@
 .ostentatious-font { /* Used for the logo in the header. */
 	font-family: 'MDNichrome', -apple-system, Helvetica, Arial, sans-serif;
 	font-weight: 700;
-	font-size: 11.25rem;
-	line-height: 12rem;
-	letter-spacing:40px;
+	font-size: 16rem;
+	line-height: 16rem;
+	letter-spacing:0.22em;
 	color: #f70000;
 	color: color(display-p3 0.968 0 0 / 1);
 	margin:0;
 	position: absolute;
-	top: 0;
-	left:50%;
-	margin-left:-50%;
-	width: 100%;
-	height: 12rem;
-	/* z-index: -1000; */
-	transform: translateX(1rem);
+	top: calc(40% + 0.5em);
+	left:0;
+	right:0;
+	width: auto;
+	height: 1em;
+}
 
+@media (max-width: 800px) {
+	.ostentatious-font {
+		top: calc(35% + 0.5em);
+	}
 }
 
 .row.horsey {
@@ -214,37 +217,45 @@
 }
 
 .knight {
-	width: 572.38px;
+	width: 100%;
+	max-width: 1200px;
 	height: auto;
 	margin-left: auto;
 	margin-right: auto;
+	z-index: 1000;
 }
 
 .flavor-text-1 {
-	background: url("/images/to-fight-thine-type-image.svg");
+	background: url("/images/to-fight-thine-type-image-white.svg");
 	background-position: center center;
+	background-size:contain;
 	text-indent: -10000px;
 	text-color: transparent;
 	font-size: 0px;
 	display:block;
 	position: relative;
 	height: 125px;
-	width: 626px;
+	width:100%;
+	max-width: 626px;
 	margin-left:auto;
 	margin-right:auto;
+	margin-bottom:-2rem;
 }
 .flavor-text-2 {
-	background: url("/images/a-sellsword-type-image.svg");
+	background: url("/images/a-sellsword-type-image-white.svg");
 	background-position: center center;
+	background-size:contain;
 	text-indent: -10000px;
 	text-color: transparent;
 	font-size: 0px;
 	display:block;
 	position: relative;
 	height: 190px;
-	width: 442px;
+	width:100%;
+	max-width: 442px;
 	margin-left:auto;
 	margin-right:auto;
+	margin-top:-2rem;
 }
 
 /* Components */
@@ -381,4 +392,8 @@ main {
 	background-size: 200px 200px;
 	background-position: center center;
 	background-repeat: no-repeat;
+}
+
+.withered { /* for text that is not all there. */
+	opacity: 0.8;
 }
