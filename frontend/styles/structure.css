@@ -15,6 +15,21 @@
 	height: auto;
 	align-items: center;
 }
+.row.vertically-padded { /* padded vertically */
+	padding-top: 8rem;
+	padding-bottom: 8rem;
+}
+.row.tall-boy { /* At least as tall as the page. */
+	min-height: 50vh;
+}
+
+/* Giving sections flexbox columns*/
+.columned {
+	display:flex;
+	flex-direction: row;
+	align-items: flex-start;
+	justify-content: space-between;
+}
 
 /* Text-alignment and stuff */
 .ta-left { text-align:left; }
@@ -23,6 +38,7 @@
 .ta-justify { text-align:justify; }
 
 /* typeface measure */
+.really-wide { width: 100%; max-width: 80.25rem; } /* 1284px - Add an 80px padding here. */
 .full-measure { width: 100%; max-width: 61.25rem; } /* 980px */
 .half-measure { width: 100%; max-width: 61.25rem; } /* 490px */
 .wide-measure { width: 100%; max-width: 40rem; } /* 640px */

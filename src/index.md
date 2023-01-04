@@ -4,13 +4,13 @@
 layout: default
 ---
 
-<div class="row">
-	<h1 class="heading-one ta-center full-measure">An Engineering<br>Studio</h1>
+<div class="row tall-boy">
+	<h1 class="heading-one ta-center full-measure" style="margin-top:1em;">An Engineering<br>Studio</h1>
 	<h2 class="excerpt ta-center full-measure">Engineering expertise to scale<br>your app and team.</h2>
 	<a class="button button-standard ta-center full-measure" href="#plans">Plans</a>
 </div>
 
-<div class="row horsey">
+<div class="row horsey vertically-padded">
 	<p class="flavor-text-1">To fight thine Enemies employ a</p>
 	<img class="knight" src="/images/clipart-ritter-pferd-illustration-1651441983EID-flipped.png" />
 	<p class="flavor-text-2">A sellsword of the highest quality</p>
@@ -19,18 +19,57 @@ layout: default
 	</div>
 </div>
 
-<div class="row">
-	<h2 class="heading-two ta-center">Only Subscriptions</h2>
+<div class="row vertically-padded">
+<h2 class="heading-two ta-center">Only Subscriptions</h2>
 <p class="paragraph measure ta-justify">It's like Netflix for building things. I used to do it differently, fixed bid contracts, The back and forth with the client to understand their true needs, Taking any job I could find. Before I figured out it was just a waste of everyone's time.</p>
 
 <p class="paragraph measure ta-justify">Now I only sell montly retainers, and I cut my time up into 40 hour slots. Buy one slot and you have my focus for 1 week per month. I can get a LOT done in a single focused week. </p>
 
-<p class="paragraph measure ta-justify">"On Netflix I can watch as many movies as I'd like?", </p>
+<blockquote class="quote measure ta-center">"On Netflix I can watch as many movies<br> as I'd like?"</blockquote>
 
 <p class="paragraph measure ta-justify">Yes, this is true, but how often have you been browsing Netflix and thought it's all sort of meh. There's nothing to watch. Prologue is like that, but just the good stuff. We're great at not just building things that last and can scale, but also building only the stuff we need to build.</p>
 </div>
 
 
+<div class="row vertically-padded">
+	<h2 class="heading-two ta-center" id="plans">How Does it work?</h2>
+
+<ul class="paragraph measure special-ordered-list">
+	<li>We go over your exact engineering needs, and put together a plan.</li>
+	<li>Add tasks to a shared list, I carry one task at a time until complete.</li>
+	<li>I open a pull request. Upon Acceptance, I move on to the next task.</li>
+	<li>Repeat! I'm on retainer and this will go on forever. Like Sisyphus.</li>
+</ul>
+
+</div>
+
+<div class="row vertically-padded">
+<section class="columned really-wide" style="padding: 5rem;box-sizing:border-box;">
+	<div>
+		<h2 class="heading-two wide-measure ta-left">development done <em>better</em>, not just different.</h2>
+		<p class="paragraph measure">As just a one person circus, (for now) I've got to be nimble AND efficient. A narrow focus in a handful of technologies, means I build fast, and efficient.</p>
+</div>
+<div class="badges-container">
+	<div class="badge ios"></div>
+	<div class="badge web"></div>
+	<div class="badge ruby"></div>
+</div>
+<!-- <div class="squiggle"></div> -->
+</section>
+
+</div>
+
+<div class="row vertically-padded">
+<section class="columned full-measure" style="padding: 5rem;box-sizing:border-box;">
+	<div>
+		<div class="iphone-illustration"></div>
+	</div>
+	<div>
+		<h2 class="heading-two wide-measure ta-left">To stay in touch...</h2>
+		<p class="paragraph measure">Reach me via iMessage, Email, and on Github through issues. All comunications is asynchronous. But I tend to do more...</p>
+	</div>
+</section>
+</div>
 
 
 

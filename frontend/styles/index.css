@@ -1,13 +1,6 @@
+@import 'variables';
 @import 'structure';
 @import 'freelancer';
-
-:root {
-  --body-background: #f8f0e4;
-  --body-color: black;
-  --heading-color: black;
-  --action-color: #f70000;
-  --p3-action-color: color(display-p3 0.968 0 0 / 1);;
-}
 
 body {
   background: var(--body-background);
@@ -39,12 +32,17 @@ h1 {
 body > header {
   /* margin: 1rem; */
   text-align: center;
+  padding: 2rem;
 }
 
 body > header img {
   display: inline-block;
   width: 400px;
   max-width: 100%;
+}
+
+body > nav {
+  display:none;
 }
 
 body > nav ul {

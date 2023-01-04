@@ -1,3 +1,4 @@
+@import 'variables';
 /* freelancer.css */
 
 
@@ -99,7 +100,7 @@
 	font-size: 5rem;
 	line-height: 5rem;
 	letter-spacing:-0.04rem;
-	margin-top: 0.5em;
+	margin-top: 0em;
 	margin-bottom: 0.5em;
 }
 
@@ -109,8 +110,12 @@
 	font-size: 3.75rem;
 	line-height: 3.75rem;
 	letter-spacing:-0.03rem;
-	margin-top: 1em;
-	margin-bottom: 1em;
+	margin-top: 0em;
+	margin-bottom: 1.25rem;
+}
+.heading-two em, h2 em {
+	color: var(--action-color);
+	color: var(--p3-action-color);
 }
 
 .excerpt {
@@ -119,7 +124,7 @@
 	font-size: 1.5rem;
 	line-height: 2rem;
 	letter-spacing:-0.012rem;
-	margin-top: 1em;
+	margin-top: 0em;
 	margin-bottom: 1em;
 }
 
@@ -129,7 +134,18 @@
 	font-size: 1.5rem;
 	line-height: 2rem;
 	letter-spacing:-0.012rem;
-	margin-top: 1em;
+	margin-top: 0em;
+	margin-bottom: 1em;
+}
+
+.quote {
+	font-family: 'MDSystem', -apple-system, Helvetica, Arial, sans-serif;
+	font-weight: 500;
+	font-style: italic;
+	font-size: 1.75rem;
+	line-height: 2rem;
+	letter-spacing:-0.018rem;
+	margin-top: 0em;
 	margin-bottom: 1em;
 }
 
@@ -138,7 +154,7 @@
 	font-weight: 700;
 	font-size: 1.875rem;
 	line-height: 2rem;
-	margin-top: 1em;
+	margin-top: 0em;
 	letter-spacing:1px;
 	margin-bottom: 1em;
 }
@@ -219,5 +235,115 @@
 /* Components */
 
 .button {
+	display:inline-block;
+	padding-top: 0;
+	padding-bottom: 0;
+	padding-left: 1.25rem;
+	padding-right: 1.25rem;
+	line-height: 2.75rem;
+	height: 2.75rem;
+	font-size: 1.5rem;
+	color: white;
+	width: auto;
+	font-family: 'MDSystem', -apple-system, Helvetica, Arial, sans-serif;
+	font-weight: 600;
+	text-decoration:none;
+	background: var(--action-color);
+	background: var(--p3-action-color);
+	border-radius: 22px;
+	min-width: 12rem;
+	margin-top:1rem;
+	margin-bottom:1rem;
+	box-sizing: border-box;
+}
+.special-ordered-list {
+	/* padding-left: 6.25rem; */
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+.special-ordered-list li {
+	margin-bottom: 1.5rem;
+	padding-left: 6.25rem;
+}
+.special-ordered-list li:before {
+	content: '';
+	color:var(--action-color);
+	color:var(--p3-action-color);
+	font-weight: 600;
+	font-size: 3.75rem;
+	font-family: 'MDPrimer', -apple-system, Helvetica, Arial, sans-serif;
+	display: block;
+	position:relative;
+	text-align: left;
+	width: 6.25rem;
+	transform: translateX(-6.25rem) translateY(2.5rem);
+}
 
+.special-ordered-list li:nth-child(1):before {
+	content: '1.';
+}
+
+.special-ordered-list li:nth-child(2):before {
+	content: '2.';
+}
+
+.special-ordered-list li:nth-child(3):before {
+	content: '3.';
+}
+
+.special-ordered-list li:nth-child(4):before {
+	content: '4.';
+}
+
+/* We don't need no stinkin' badges */
+.badges-container {
+	display:flex;
+	flex-direction: column;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	width:50%;
+	max-width: 30rem;
+}
+.badge {
+	display:block;
+	width: 11.25rem;
+	height: 10rem;
+	margin:auto;
+	border:none;
+	margin-bottom: 2rem;
+	background-repeat: no-repeat;
+}
+.badge.ios {
+	background: url("/images/badge-ios.svg");
+	background-position: center center;
+}
+.badge.web {
+	background: url("/images/badge-web.svg");
+	background-position: center center;
+}
+.badge.ruby {
+	background: url("/images/badge-ruby.svg");
+	background-position: center center;
+}
+
+.iphone-illustration {
+	display:block;
+	position:relative;
+	width:274px;
+	height:334px;
+	background: url("/images/i-phones.svg");
+	background-size: 274px 334px;
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+
+
+.patterned-row {
+	background-color:black;
+	background-image: url("/images/prologue-pattern.jpg");
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
 }
