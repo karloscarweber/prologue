@@ -191,6 +191,10 @@
 	letter-spacing:-0.03rem;
 	margin-bottom: 0.25em;
 	z-index: 1000;
+	-webkit-transition: transform 0.1s 0s ease;
+	-moz-transition: transform 0.1s 0s ease;
+	-o-transition: transform 0.1s 0s ease;
+	transition: transform 0.1s 0s ease;
 }
 
 .ostentatious-font { /* Used for the logo in the header. */
@@ -410,6 +414,10 @@ main {
 	background-size: 200px 200px;
 	background-position: center center;
 	background-repeat: no-repeat;
+	-webkit-transition: transform 0.1s 0s ease;
+	-moz-transition: transform 0.1s 0s ease;
+	-o-transition: transform 0.1s 0s ease;
+	transition: transform 0.1s 0s ease;
 }
 
 .withered { /* for text that is not all there. */
