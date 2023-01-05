@@ -389,7 +389,7 @@
 
 body {
 	background-color:#0D081D;
-	background-image: url("/images/prologue-pattern-dark.jpg");
+	/* background-image: url("/images/prologue-pattern-dark.jpg"); */
 	background-size: cover;
 	background-position: center center;
 	background-repeat: no-repeat;
@@ -404,6 +404,7 @@ main {
 	height: 100vh;
 	flex-direction: column;
 	justify-content: center;
+	background: #e7e7e7;
 }
 
 .logo-thing {
@@ -418,7 +419,7 @@ main {
 	-moz-transition: transform 0.1s 0s ease;
 	-o-transition: transform 0.1s 0s ease;
 	transition: transform 0.1s 0s ease;
-	margin-bottom: -8rem;
+	margin-bottom: -10rem;
 }
 
 .withered { /* for text that is not all there. */
@@ -543,4 +544,9 @@ main {
 		font-size: 2.25rem;
 		line-height: 2.25rem;
 	}
+}
+
+/* The White thing. */
+.patterned-row .title-logo, .patterned-row .excerpt { /* Used for the logo in the header. */
+	color: #0D081D;
 }
