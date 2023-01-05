@@ -31,79 +31,43 @@ layout: default
 </section>
 
 <div class="row darkened vertically-padded">
-	<h2 class="heading-two ta-center">Only Subscriptions</h2>
-	<p class="paragraph measure ta-justify">It's like Netflix for building things. I used to do it differently, fixed bid contracts, The back and forth with the client to understand their true needs, Taking any job I could find. Before I figured out it was just a waste of everyone's time.</p>
-
-	<p class="paragraph measure ta-justify">Now I only sell montly retainers, and I cut my time up into 40 hour slots. Buy one slot and you have my focus for 1 week per month. I can get a LOT done in a single focused week. </p>
-
-	<blockquote class="quote measure ta-center">"On Netflix I can watch as many movies<br> as I'd like?"</blockquote>
-
-	<p class="paragraph measure ta-justify">Yes, this is true, but how often have you been browsing Netflix and thought it's all sort of meh. There's nothing to watch. Prologue is like that, but just the good stuff. We're great at not just building things that last and can scale, but also building only the stuff we need to build.</p>
-</div>
-
-
-<div class="row darkened vertically-padded">
-	<h2 class="heading-two ta-center" id="plans">How Does it work?</h2>
-
-<ul class="paragraph measure special-ordered-list">
-	<li>We go over your exact engineering needs, and put together a plan.</li>
-	<li>Add tasks to a shared list, I carry one task at a time until complete.</li>
-	<li>I open a pull request. Upon Acceptance, I move on to the next task.</li>
-	<li>Repeat! I'm on retainer and this will go on forever. Like Sisyphus.</li>
-</ul>
-
-</div>
-
-<div class="row darkened vertically-padded">
-<section class="columned really-wide" style="padding: 5rem;box-sizing:border-box;">
-	<div>
-		<h2 class="heading-two wide-measure ta-left">development done <em>better</em>, not just different.</h2>
-		<p class="paragraph measure">As just a one person circus, (for now) I've got to be nimble AND efficient. A narrow focus in a handful of technologies, means I build fast, and efficient.</p>
-</div>
-<div class="badges-container">
-	<div class="badge ios"></div>
-	<div class="badge web"></div>
-	<div class="badge ruby"></div>
-</div>
-<!-- <div class="squiggle"></div> -->
-</section>
-
-</div>
-
-<div class="row darkened vertically-padded">
-<section class="columned full-measure" style="padding: 5rem;box-sizing:border-box;">
-	<div>
-		<div class="iphone-illustration"></div>
+<section class="really-wide" style="padding: 5rem;box-sizing:border-box;">
+	<div class="measure">
+		<h2 class="heading-one ta-left withered">Retain Us</h2>
+		<p class="paragraph withered">We only work on a retainer basis. To get started we hold a project assessment, and charge $500 to start service.</p>
+		<p class="paragraph withered">Pause or Cancel at anytime.</p>
+		<p class="paragraph withered"><a href="#">Book a Call to see if this is a good fit.</a></p>
 	</div>
-	<div>
-		<h2 class="heading-two wide-measure ta-left">To stay in touch...</h2>
-		<p class="paragraph measure">Reach me via iMessage, Email, and on Github through issues. All comunications is asynchronous. But I tend to do more...</p>
+	<div class="card-container">
+		<div class="price-card">
+			<h2 class="ta-center ">Monthly</h2>
+			<p class="price">$7,499/<span>month</span></p>
+			<p class="price-subtext">Cancel Anytime</p>
+			<p><a href="#" class="button">Buy</a></p>
+			<p><strong>50</strong> hours of hyper focus on your projects each month.<br>
+			iOS, Ruby, or Web.</p>
+		</div>
+		<div class="price-card">
+			<h2 class="ta-center ">Quarterly</h2>
+			<p class="price">$6,499/<span>month</span></p>
+			<p class="price-subtext">Cancel Anytime</p>
+			<a href="#" class="button">Buy</a>
+			<p><strong>50</strong> hours of hyper focus on your projects each month.<br>
+			iOS, Ruby, or Web.<br>
+			<strong>$1000 per month savings</strong></p>
+		</div>
+		<div class="price-card outlined">
+			<h3 class="ta-center ">Per Project</h3>
+			<p>Have a limited engagement?<br>
+			Subscribe to a monthly Retainer then cancel, it's that easy.</p>
+			<h3>Rush</h3>
+			<p>Need something done quicker than quick? We sell extra time in chunks of 10 hours. $1,000 a block.</p>
+			<p>Predictable, simple pricing.</p>
+		</div>
+	</div>
+	<div class="really-wide">
+		<h2 class="full-measure heading-one ta-left withered">If you're a Designer...</h2>
+		<p class="measure paragraph withered">Making great work means working with the best people. If you're a designer looking for development support we offer special rates. We Really want to build your projects.</p>
+		<p class="measure paragraph withered"><a href="#">Reach out to Collaborate</a></p>
 	</div>
 </section>
-</div>
-
-
-
-
-# Welcome to your new Bridgetown website.
-
-You can learn more about how to build and deploy your new website by reading the  [Bridgetown documentation](https://www.bridgetownrb.com/docs).
-
-You can choose a [theme](https://github.com/topics/bridgetown-theme) or add some [plugins](https://www.bridgetownrb.com/plugins/) to get started quickly.
-
-Be sure to check out the [Bridgetown Cards](https://bridgetown.cards) community site for helpful tips & tricks.
-
-If you run into any issues or have additional questions, please join us in our [Discord chat](https://discord.gg/4E6hktQGz4) or in [GitHub discussions](https://github.com/bridgetownrb/bridgetown/discussions).
-
-_Have fun and **good luck**!_
-
-----
-
-**Generated by v1.1.0**
-{:style="text-align:center"}
-
-
-<h1 class="heading-one">Lorem ipsum</h1>
-<h2 class="heading-two">Lorem ipsum</h2>
-<p class="paragraph">Lorem ipsum</p>
-

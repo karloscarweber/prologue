@@ -173,15 +173,14 @@
 	z-index: 1000;
 }
 
-
 .ostentatious-font { /* Used for the logo in the header. */
 	font-family: 'MDNichrome', -apple-system, Helvetica, Arial, sans-serif;
 	font-weight: 700;
 	font-size: 16rem;
 	line-height: 16rem;
 	letter-spacing:0.22em;
-	color: #f70000;
-	color: color(display-p3 0.968 0 0 / 1);
+	color: var(--action-color);
+	color: var(--p3-action-color);
 	margin:0;
 	position: absolute;
 	top: calc(40% + 0.5em);
@@ -396,4 +395,58 @@ main {
 
 .withered { /* for text that is not all there. */
 	opacity: 0.8;
+}
+
+/* Card Container */
+.card-container {
+	display:flex;
+	flex-direction:row;
+	justify-content:space-between;
+}
+.price-card {
+	display:block;
+	width: 100%;
+	max-width:320px;
+	height:auto;
+	min-height:500px;
+	box-sizing:border-box;
+	padding:2.5rem;
+	border-radius:2.5rem;
+	background-color: #B4BCCA;
+	background-color: color(display-p3 0.705 0.737 0.792 / 1);
+}
+.price-card h2, .price-card p {
+	color: black;
+}
+.price-card p.price {
+	font-family: 'ManifoldCF', 'MDPrimer', -apple-system, Helvetica, Arial, sans-serif;
+	font-weight: 800;
+	font-size: 2rem;
+	line-height: 2rem;
+	text-align:center;
+	margin-bottom:0;
+}
+.price-card p.price span {
+	font-size: 1rem;
+}
+.price-card p.price-subtext {
+	font-size: 1rem;
+	line-height: 1rem;
+	text-align: center;
+	opacity: 0.7;
+	margin-top:-0.25rem;
+}
+.price-card .button {
+	display:block;
+	margin: 4rem auto;
+	text-align: center;
+	color:black;
+}
+/*
+			<p class="price">$7,499/<span>month</span></p>
+<p class="price-subtext">Cancel Anytime</p> */
+
+.price-card.outlined {
+	background:transparent;
+	border: solid 3px #8D9197;
 }
