@@ -136,7 +136,6 @@
 }
 .heading-two em, h2 em {
 	color: var(--action-color);
-	color: var(--p3-action-color);
 }
 
 .excerpt {
@@ -148,7 +147,7 @@
 	margin-top: 0em;
 	margin-bottom: 1em;
 	opacity: 0.8;
-	color: #E7E7E7;
+	color: var(--silver-color);
 }
 
 .paragraph {
@@ -184,7 +183,7 @@
 
 .title-logo { /* Used for the logo in the header. */
 	font-family: 'MDNichrome', -apple-system, Helvetica, Arial, sans-serif;
-	color: #E7E7E7;
+	color: var(--silver-color);
 	font-weight: 700;
 	font-size: 3.75rem;
 	line-height: 4rem;
@@ -201,7 +200,6 @@
 	line-height: 16rem;
 	letter-spacing:0.22em;
 	color: var(--action-color);
-	color: var(--p3-action-color);
 	margin:0;
 	position: absolute;
 	top: calc(40% + 0.5em);
@@ -249,6 +247,7 @@
 	background: url("/images/to-fight-thine-type-image-white.svg");
 	background-position: center center;
 	background-size:contain;
+	background-repeat:no-repeat;
 	text-indent: -10000px;
 	text-color: transparent;
 	font-size: 0px;
@@ -265,6 +264,7 @@
 	background: url("/images/a-sellsword-type-image-white.svg");
 	background-position: center center;
 	background-size:contain;
+	background-repeat:no-repeat;
 	text-indent: -10000px;
 	text-color: transparent;
 	font-size: 0px;
@@ -295,7 +295,6 @@
 	font-weight: 600;
 	text-decoration:none;
 	background: var(--action-color);
-	background: var(--p3-action-color);
 	border-radius: 22px;
 	min-width: 12rem;
 	margin-top:1rem;
@@ -315,7 +314,6 @@
 .special-ordered-list li:before {
 	content: '';
 	color:var(--action-color);
-	color:var(--p3-action-color);
 	font-weight: 600;
 	font-size: 3.75rem;
 	font-family: 'MDPrimer', -apple-system, Helvetica, Arial, sans-serif;
@@ -435,8 +433,7 @@ main {
 	box-sizing:border-box;
 	padding:2.5rem;
 	border-radius:2.5rem;
-	background-color: #B4BCCA;
-	background-color: color(display-p3 0.705 0.737 0.792 / 1);
+	background-color: var(--stone-color);
 }
 .price-card h2, .price-card p {
 	color: black;
@@ -482,12 +479,10 @@ main {
 	background:transparent;
 	border: solid 3px #8D9197;
 	color: var(--silver-color);
-	color: var(--p3-silver-color);
 }
 
 .price-card.outlined p, .price-card.outlined h3 {
 	color: var(--silver-color);
-	color: var(--p3-silver-color);
 }
 .price-card.outlined h3 {
 	font-size: 2rem;
@@ -527,5 +522,16 @@ main {
 	}
 	.price-card.outlined div {
 		width: initial;
+	}
+
+	/* Typography changes */
+	.heading-one {
+		font-size: 3rem;
+		line-height: 3rem;
+	}
+
+	.heading-two {
+		font-size: 2.25rem;
+		line-height: 2.25rem;
 	}
 }

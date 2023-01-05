@@ -54,3 +54,15 @@
 .measure { width: 100%; max-width: 32.5rem; } /* 520px */
 .narrow-measure { width: 100%; max-width: 20rem; } /* 320px */
 
+/* Give sections padding */
+.padded-section {
+	padding: 5rem;
+	box-sizing:border-box;
+}
+
+
+@media (max-width: 800px) {
+	.padded-section {
+		padding: 2rem;
+	}
+}

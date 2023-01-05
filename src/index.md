@@ -18,7 +18,7 @@ layout: default
 </div>
 
 <div class="row darkened vertically-padded">
-<section class="columned really-wide" style="padding: 5rem;box-sizing:border-box;">
+<section class="columned really-wide padded-section">
 	<div class="measure">
 		<h2 class="heading-one ta-left withered">An Engineering Studio</h2>
 	</div>
@@ -31,7 +31,7 @@ layout: default
 </section>
 
 <div class="row darkened vertically-padded">
-<section class="really-wide" style="padding: 5rem;box-sizing:border-box;">
+<section class="really-wide padded-section">
 	<div class="measure">
 		<h2 class="heading-two ta-left withered">Retain Us</h2>
 		<p class="paragraph withered">We only work on a retainer basis. To get started we hold a project assessment, and charge $500 to start service.</p>
