@@ -418,6 +418,7 @@ main {
 	-moz-transition: transform 0.1s 0s ease;
 	-o-transition: transform 0.1s 0s ease;
 	transition: transform 0.1s 0s ease;
+	margin-bottom: -8rem;
 }
 
 .withered { /* for text that is not all there. */

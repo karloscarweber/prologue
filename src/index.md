@@ -4,17 +4,17 @@
 layout: default
 ---
 
-<div class="row patterned-row thing tall-boy">
-	<div class="logo-thing parallaxy-animate" parallaxy-options='{"multiplier":"0.100", "direction":"down", "positionType": "relative"}'></div>
-	<h1 class="title-logo ta-center full-measure parallaxy-animate" parallaxy-options='{"multiplier":"0.005", "direction":"up", "positionType": "relative", "attribute" : "margintop"}'>Prologue Productions</h1>
-	<p class="excerpt ta-center full-measure">An Engineering Studio</p>
-</div>
-
 <div class="row darkened horsey vertically-padded">
 	<p class="flavor-text-1">To fight thine Enemies employ a</p>
 	<img class="knight" src="/images/white-knight.png" />
 	<p class="flavor-text-2">A sellsword of the highest quality</p>
 	<p class="ostentatious-font ta-center">FREELANCER</p>
+</div>
+
+<div class="row patterned-row thing tall-boy">
+	<div class="logo-thing parallaxy-animate" parallaxy-options='{"multiplier":"0.100", "direction":"down", "positionType": "relative", "parent": "tall-boy"}'></div>
+	<h1 class="title-logo ta-center full-measure parallaxy-animate" parallaxy-options='{"multiplier":"0.005", "direction":"up", "positionType": "relative", "attribute" : "margintop", "parent": "tall-boy"}'>Prologue Productions</h1>
+	<p class="excerpt ta-center full-measure">An Engineering Studio</p>
 </div>
 
 <div class="row darkened vertically-padded">
