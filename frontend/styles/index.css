@@ -95,3 +95,10 @@ hr {
   border-top: 2px dotted #bbb;
   margin: 3rem 0;
 }
+
+
+footer {
+  background-color: #0D081D;
+  height: 300px;
+  margin-bottom: 0;
+}
