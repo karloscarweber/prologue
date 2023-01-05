@@ -25,7 +25,6 @@ layout: default
 <div class="measure">
 	<p class="paragraph withered">Focused on building scalable feature rich applications and websites fast. With a very narrow focus on a select few technologies: Ruby, Swift, and the vanilla basics of the web: HTML, CSS, and JavaScript.</p>
 	<p class="paragraph withered">We deliver what takes most teams months in just weeks.</p>
-	<p class="paragraph withered"><a href="#">Book a Call to see if this is a good fit.</a></p>
 </div>
 <!-- <div class="squiggle"></div> -->
 </section>
@@ -36,14 +35,14 @@ layout: default
 		<h2 class="heading-two ta-left withered">Retain Us</h2>
 		<p class="paragraph withered">We only work on a retainer basis. To get started we hold a project assessment, and charge $500 to start service.</p>
 		<p class="paragraph withered">Pause or Cancel at anytime.</p>
-		<p class="paragraph withered"><a href="#">Book a Call to see if this is a good fit.</a></p>
+		<p class="paragraph withered"><a href="#" id="action-book-a-call">Book a Call to see if this is a good fit.</a></p>
 	</div>
 	<div class="card-container">
 		<div class="price-card">
 			<h2 class="ta-center ">Monthly</h2>
 			<p class="price">$7,499/<span>month</span></p>
 			<p class="price-subtext">Cancel Anytime</p>
-			<a href="#" class="button">Buy</a>
+			<a href="#" class="button" id="action-buy-a-retainer-monthly">Buy</a>
 			<p><strong>50</strong> hours of hyper focus on your projects each month.<br>
 			iOS, Ruby, or Web.</p>
 		</div>
@@ -51,7 +50,7 @@ layout: default
 			<h2 class="ta-center ">Quarterly</h2>
 			<p class="price">$6,499/<span>month</span></p>
 			<p class="price-subtext">Cancel Anytime</p>
-			<a href="#" class="button">Buy</a>
+			<a href="#" class="button" id="action-buy-a-retainer-quarterly">Buy</a>
 			<p><strong>50</strong> hours of hyper focus on your projects each month.<br>
 			iOS, Ruby, or Web.<br>
 			<strong>$1000 per month savings</strong></p>
@@ -72,6 +71,6 @@ layout: default
 	<div class="really-wide">
 		<h2 class="full-measure heading-two ta-left withered">If you're a Designer...</h2>
 		<p class="measure paragraph withered">Making great work means working with the best people. If you're a designer looking for development support we offer special rates. We Really want to build your projects.</p>
-		<p class="measure paragraph withered"><a href="#">Reach out to Collaborate</a></p>
+		<p class="measure paragraph withered"><a href="#" id="action-designer-collaborate">Reach out to Collaborate</a></p>
 	</div>
 </section>

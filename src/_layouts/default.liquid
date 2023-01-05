@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="{{ site.locale }}">
   <head>
+    <script src="https://cdn.logsnag.com/js/0.1.6/ls.js"></script>
     {% render "head", metadata: site.metadata, title: resource.data.title %}
   </head>
   <body class="{{ resource.data.layout }} {{ resource.data.page_class }}">
@@ -11,7 +12,5 @@
     </main>
 
     {% render "footer", metadata: site.metadata %}
-    <script src="{% asset_path js %}"></script>
-
   </body>
 </html>
