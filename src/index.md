@@ -1,7 +1,7 @@
 ---
 # Feel free to add content and custom Front Matter to this file.
 
-layout: default
+layout: freelance
 ---
 
 <div class="row darkened horsey vertically-padded">
