@@ -33,7 +33,7 @@ layout: default
 <div class="row darkened vertically-padded">
 <section class="really-wide" style="padding: 5rem;box-sizing:border-box;">
 	<div class="measure">
-		<h2 class="heading-one ta-left withered">Retain Us</h2>
+		<h2 class="heading-two ta-left withered">Retain Us</h2>
 		<p class="paragraph withered">We only work on a retainer basis. To get started we hold a project assessment, and charge $500 to start service.</p>
 		<p class="paragraph withered">Pause or Cancel at anytime.</p>
 		<p class="paragraph withered"><a href="#">Book a Call to see if this is a good fit.</a></p>
@@ -43,7 +43,7 @@ layout: default
 			<h2 class="ta-center ">Monthly</h2>
 			<p class="price">$7,499/<span>month</span></p>
 			<p class="price-subtext">Cancel Anytime</p>
-			<p><a href="#" class="button">Buy</a></p>
+			<a href="#" class="button">Buy</a>
 			<p><strong>50</strong> hours of hyper focus on your projects each month.<br>
 			iOS, Ruby, or Web.</p>
 		</div>
@@ -57,16 +57,20 @@ layout: default
 			<strong>$1000 per month savings</strong></p>
 		</div>
 		<div class="price-card outlined">
-			<h3 class="ta-center ">Per Project</h3>
-			<p>Have a limited engagement?<br>
-			Subscribe to a monthly Retainer then cancel, it's that easy.</p>
-			<h3>Rush</h3>
-			<p>Need something done quicker than quick? We sell extra time in chunks of 10 hours. $1,000 a block.</p>
-			<p>Predictable, simple pricing.</p>
+			<div>
+				<h3 class="ta-center withered">Per Project</h3>
+				<p class="withered">Have a limited engagement?<br>
+				Subscribe to a monthly Retainer then cancel, it's that easy.</p>
+			</div>
+			<div>
+				<h3 class="ta-center withered">Rush</h3>
+				<p class="withered">Need something done quicker than quick? We sell extra time in chunks of 10 hours. $1,000 a block.</p>
+				<p class="withered">Predictable, simple pricing.</p>
+			</div>
 		</div>
 	</div>
 	<div class="really-wide">
-		<h2 class="full-measure heading-one ta-left withered">If you're a Designer...</h2>
+		<h2 class="full-measure heading-two ta-left withered">If you're a Designer...</h2>
 		<p class="measure paragraph withered">Making great work means working with the best people. If you're a designer looking for development support we offer special rates. We Really want to build your projects.</p>
 		<p class="measure paragraph withered"><a href="#">Reach out to Collaborate</a></p>
 	</div>

@@ -88,8 +88,29 @@
 		src: url("../fonts/mdnichrome/MDNichrome-Black.woff2?v=99.99") format("woff2"), url("../fonts/mdnichrome/MDNichrome-Black.woff?v=99.99") format("woff");
 	}
 
-	.typeface-mdprimer { /* for just using the typeface */
+	.typeface-mdnichrome { /* for just using the typeface */
 		font-family: 'MDNichrome', -apple-system, Helvetica, Arial, sans-serif;
+	}
+
+	/* MD Nichrome */
+	@font-face {
+		font-family: 'ManifoldCF';
+		font-style: normal;
+		font-weight: 500;
+		font-display: swap;
+		src: url("../fonts/manifold/ManifoldCF-Regular.woff2?v=99.99") format("woff2"), url("../fonts/manifold/ManifoldCF-Regular.woff?v=99.99") format("woff");
+	}
+
+	@font-face {
+		font-family: 'ManifoldCF';
+		font-style: normal;
+		font-weight: 800;
+		font-display: swap;
+		src: url("../fonts/manifold/ManifoldCF-ExtraBold.woff2?v=99.99") format("woff2"), url("../fonts/manifold/ManifoldCF-ExtraBold.woff?v=99.99") format("woff");
+	}
+
+	.typeface-manifoldcf { /* for just using the typeface */
+		font-family: 'ManifoldCF', -apple-system, Helvetica, Arial, sans-serif;
 	}
 
 /* Headings */
@@ -402,6 +423,8 @@ main {
 	display:flex;
 	flex-direction:row;
 	justify-content:space-between;
+	flex-wrap:wrap;
+	margin: 10rem 0;
 }
 .price-card {
 	display:block;
@@ -418,6 +441,10 @@ main {
 .price-card h2, .price-card p {
 	color: black;
 }
+.price-card h2 {
+	font-size:3rem;
+	line-height:1em;
+}
 .price-card p.price {
 	font-family: 'ManifoldCF', 'MDPrimer', -apple-system, Helvetica, Arial, sans-serif;
 	font-weight: 800;
@@ -428,6 +455,7 @@ main {
 }
 .price-card p.price span {
 	font-size: 1rem;
+	font-weight: 500;
 }
 .price-card p.price-subtext {
 	font-size: 1rem;
@@ -441,7 +469,11 @@ main {
 	margin: 4rem auto;
 	text-align: center;
 	color:black;
+	font-weight: 500;
+	font-size: 1.125rem;
 }
+
+
 /*
 			<p class="price">$7,499/<span>month</span></p>
 <p class="price-subtext">Cancel Anytime</p> */
@@ -449,4 +481,51 @@ main {
 .price-card.outlined {
 	background:transparent;
 	border: solid 3px #8D9197;
+	color: var(--silver-color);
+	color: var(--p3-silver-color);
+}
+
+.price-card.outlined p, .price-card.outlined h3 {
+	color: var(--silver-color);
+	color: var(--p3-silver-color);
+}
+.price-card.outlined h3 {
+	font-size: 2rem;
+	line-height:1em;
+	font-family: 'MDPrimer', -apple-system, Helvetica, Arial, sans-serif;
+}
+.price-card.outlined p {
+	font-size: 1rem;
+	line-height:1.5em;
+	font-family: 'MDSystem', -apple-system, Helvetica, Arial, sans-serif;
+}
+
+
+@media (max-width: 1200px) {
+	.card-container {
+		justify-content: space-around;
+	}
+	.price-card {
+		margin-bottom: 5rem;
+	}
+	.price-card.outlined {
+		max-width: 100%;
+		display:flex;
+		justify-content: space-between;
+		gap: 5rem;
+		min-height: auto;
+	}
+	.price-card.outlined div {
+		width: 50%;
+	}
+}
+
+@media (max-width: 800px) {
+	.price-card.outlined {
+		max-width: 320px;
+		display:block;
+	}
+	.price-card.outlined div {
+		width: initial;
+	}
 }
