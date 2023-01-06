@@ -19,6 +19,12 @@
 	padding-top: 8rem;
 	padding-bottom: 8rem;
 }
+@media (max-width: 800px) {
+	.row.vertically-padded { /* padded vertically */
+		padding-top: 4rem;
+		padding-bottom: 4rem;
+	}
+}
 .row.tall-boy { /* At least as tall as the page. */
 	/* min-height: 120vh; */
 }

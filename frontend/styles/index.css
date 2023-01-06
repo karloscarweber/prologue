@@ -34,7 +34,7 @@ h1 {
 body > header {
   /* margin: 1rem; */
   text-align: center;
-  padding: 2rem 0rem;
+  padding: 1rem 0rem;
   position: fixed;
   top: 0;
   left:0;
@@ -53,10 +53,19 @@ body > header.visible {
   opacity: 1.0;
 }
 
+.logo-thing {
+  display:block;
+  background-image: url("/images/logo.png");
+  margin-bottom: -10rem;
+}
+
 body > header img {
   display: inline-block;
-  width: 400px;
-  max-width: 100%;
+  position: absolute;
+  left: 4rem;
+  width: 2rem;
+  max-width: 2rem;
+  pointer-events:none;
 }
 
 body > nav {
