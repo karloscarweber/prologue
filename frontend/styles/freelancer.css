@@ -198,25 +198,20 @@
 }
 
 .ostentatious-font { /* Used for the logo in the header. */
-	font-family: 'MDNichrome', -apple-system, Helvetica, Arial, sans-serif;
-	font-weight: 700;
-	font-size: 16rem;
-	line-height: 16rem;
-	letter-spacing:0.22em;
+	font-family: 'MDPrimer', -apple-system, Helvetica, Arial, sans-serif;
+	font-weight: 800;
+	font-size: 17rem;
+	line-height: 1em;
+	letter-spacing:-0.06em;
 	color: var(--action-color);
 	margin:0;
 	position: absolute;
-	top: calc(40% + 0.5em);
+	top: calc(50% - 0.5em);
 	left:0;
 	right:0;
 	width: auto;
 	height: 1em;
-}
-
-@media (max-width: 800px) {
-	.ostentatious-font {
-		top: calc(35% + 0.5em);
-	}
+	margin-left:-0.1em;
 }
 
 .row.horsey {
@@ -280,6 +275,23 @@
 	margin-left:auto;
 	margin-right:auto;
 	margin-top:-2rem;
+}
+
+.flavor-text-1, .flavor-text-2 {
+	-webkit-transition: transform 0.3s 0s ease;
+	-moz-transition: transform 0.3s 0s ease;
+	-o-transition: transform 0.3s 0s ease;
+	transition: transform 0.3s 0s ease;
+}
+@media (max-width: 800px) {
+	.flavor-text-1, .flavor-text-2 {
+		transform: scale(0.75);
+	}
+}
+@media (min-width: 1300px) {
+	.flavor-text-1, .flavor-text-2 {
+		transform: scale(1.25);
+	}
 }
 
 /* Components */
@@ -548,5 +560,6 @@ main {
 
 /* The White thing. */
 .patterned-row .title-logo, .patterned-row .excerpt { /* Used for the logo in the header. */
-	color: #0D081D;
+	color: #0D081D; opacity: 1.0; z-index: 1000;
 }
+

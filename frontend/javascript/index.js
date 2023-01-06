@@ -15,7 +15,7 @@ scrollyscroll();
 
 freelancer = document.getElementsByClassName("ostentatious-font")[0];
 let control = 1680; // represents max screen width
-let magicNumber = 16.25; // represents font size at that screenwidth
+let magicNumber = 17; // represents font size at that screenwidth
 sizey = function() {
 	let gamma = (window.innerWidth/control)
 	console.log(gamma)
@@ -114,3 +114,18 @@ buyRetainerMonthly.addEventListener("click", buy_monthly, false);
 buyRetainerQuarterly.addEventListener("click", buy_quarterly, false);
 designerCollaborate.addEventListener("click", designer_interested_event, false);
 sayHello.addEventListener("click", say_hello_event, false);
+
+// Menu thing
+const stopper = document.getElementsByClassName('reaches-top')[0]
+const menu = document.getElementsByClassName('header')[0]
+show_hide_menu = function() {
+	// console.log("show_hide_menu:, stopper.getBoundingClientRect().top :", stopper.getBoundingClientRect().top )
+	// console.log("!menu.classList.contains('visible'):", !menu.classList.contains('visible'))
+	if (stopper.getBoundingClientRect().top < 0 && !menu.classList.contains('visible')) {
+		menu.classList.add("visible");
+	} else if (stopper.getBoundingClientRect().top > 0 && menu.classList.contains('visible')) {
+		menu.classList.remove("visible");
+	}
+	window.requestAnimationFrame( show_hide_menu );
+}
+show_hide_menu()

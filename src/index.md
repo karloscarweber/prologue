@@ -17,7 +17,7 @@ layout: freelance
 	<p class="excerpt ta-center full-measure">An Engineering Studio</p>
 </div>
 
-<div class="row darkened vertically-padded">
+<div class="row darkened vertically-padded reaches-top">
 <section class="columned really-wide padded-section">
 	<div class="measure">
 		<h2 class="heading-one ta-left withered">An Engineering Studio</h2>
