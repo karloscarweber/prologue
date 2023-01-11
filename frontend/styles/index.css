@@ -1,6 +1,7 @@
 @import 'variables';
 @import 'structure';
 @import 'freelancer';
+@import 'typography';
 
 body {
   /* background: var(--body-background); */
@@ -57,6 +58,12 @@ body > header.visible {
   display:block;
   background-image: url("/images/logo.png");
   margin-bottom: -10rem;
+}
+
+@media (max-width: 600px) {
+  header > .logo-font {
+    display: none;
+  }
 }
 
 body > header img {

@@ -16,8 +16,8 @@
 	align-items: center;
 }
 .row.vertically-padded { /* padded vertically */
-	padding-top: 8rem;
-	padding-bottom: 8rem;
+	padding-top: 25vh;
+	padding-bottom: 25vh;
 }
 @media (max-width: 800px) {
 	.row.vertically-padded { /* padded vertically */

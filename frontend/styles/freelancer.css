@@ -159,6 +159,8 @@
 	margin-top: 0em;
 	margin-bottom: 1em;
 }
+.paragraph strong { font-weight: 700; opacity:1.0; }
+.paragraph em     { font-style: italic; }
 
 .quote {
 	font-family: 'MDSystem', -apple-system, Helvetica, Arial, sans-serif;
