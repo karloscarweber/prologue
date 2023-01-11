@@ -1,4 +1,232 @@
 @import 'variables';
 
+/* MD Primer */
+@font-face {
+	font-family: 'MDPrimer';
+	font-style: normal;
+	font-weight: 600;
+	font-display: swap;
+	src: url("../fonts/mdprimer/MDPrimer-Bold.woff2?v=99.99") format("woff2"), url("../fonts/mdprimer/MDPrimer-Bold.woff?v=99.99") format("woff");
+}
+
+.typeface-mdprimer { /* for just using the typeface */
+	font-family: 'MDPrimer', -apple-system, Helvetica, Arial, sans-serif;
+}
 
 
+/* MD System */
+@font-face {
+	font-family: 'MDSystem'; font-style: normal; font-display: swap;
+	font-weight: 400;
+	src: url("../fonts/mdsystem/MDSystem-Regular.woff2?v=99.99") format("woff2"), url("../fonts/mdsystem/MDSystem-Regular.woff?v=99.99") format("woff");
+}
+@font-face {
+	font-family: 'MDSystem'; font-style: italic; font-display: swap;
+	font-weight: 400;
+	src: url("../fonts/mdsystem/MDSystem-Italic.woff2?v=99.99") format("woff2"), url("../fonts/mdsystem/MDSystem-Italic.woff?v=99.99") format("woff");
+}
+
+@font-face {
+	font-family: 'MDSystem'; font-style: normal; font-display: swap;
+	font-weight: 500;
+	src: url("../fonts/mdsystem/MDSystem-Medium.woff2?v=99.99") format("woff2"), url("../fonts/mdsystem/MDSystem-Medium.woff?v=99.99") format("woff");
+}
+@font-face {
+	font-family: 'MDSystem'; font-style: italic; font-display: swap;
+	font-weight: 500;
+	src: url("../fonts/mdsystem/MDSystem-MediumItalic.woff2?v=99.99") format("woff2"), url("../fonts/mdsystem/MDSystem-MediumItalic.woff?v=99.99") format("woff");
+}
+
+@font-face {
+	font-family: 'MDSystem'; font-style: normal; font-display: swap;
+	font-weight: 600;
+	src: url("../fonts/mdsystem/MDSystem-Dark.woff2?v=99.99") format("woff2"), url("../fonts/mdsystem/MDSystem-Dark.woff?v=99.99") format("woff");
+}
+@font-face {
+	font-family: 'MDSystem'; font-style: italic; font-display: swap;
+	font-weight: 600;
+	src: url("../fonts/mdsystem/MDSystem-DarkItalic.woff2?v=99.99") format("woff2"), url("../fonts/mdsystem/MDSystem-DarkItalic.woff?v=99.99") format("woff");
+}
+
+@font-face {
+	font-family: 'MDSystem'; font-style: normal; font-display: swap;
+	font-weight: 700;
+	src: url("../fonts/mdsystem/MDSystem-Bold.woff2?v=99.99") format("woff2"), url("../fonts/mdsystem/MDSystem-Bold.woff?v=99.99") format("woff");
+}
+@font-face {
+	font-family: 'MDSystem'; font-style: italic; font-display: swap;
+	font-weight: 700;
+	src: url("../fonts/mdsystem/MDSystem-BoldItalic.woff2?v=99.99") format("woff2"), url("../fonts/mdsystem/MDSystem-BoldItalic.woff?v=99.99") format("woff");
+}
+
+@font-face {
+	font-family: 'MDSystem'; font-style: normal; font-display: swap;
+	font-weight: 800;
+	src: url("../fonts/mdsystem/MDSystem-Heavy.woff2?v=99.99") format("woff2"), url("../fonts/mdsystem/MDSystem-Heavy.woff?v=99.99") format("woff");
+}
+@font-face {
+	font-family: 'MDSystem'; font-style: italic; font-display: swap;
+	font-weight: 800;
+	src: url("../fonts/mdsystem/MDSystem-Heavy.woff2?v=99.99") format("woff2"), url("../fonts/mdsystem/MDSystem-Heavy.woff?v=99.99") format("woff");
+}
+
+.typeface-mdsystem { /* for just using the typeface */
+	font-family: 'MDSystem', -apple-system, Helvetica, Arial, sans-serif;
+}
+
+/* MD Nichrome */
+@font-face {
+	font-family: 'MDNichrome';
+	font-style: normal;
+	font-weight: 700;
+	font-display: swap;
+	src: url("../fonts/mdnichrome/MDNichrome-Black.woff2?v=99.99") format("woff2"), url("../fonts/mdnichrome/MDNichrome-Black.woff?v=99.99") format("woff");
+}
+
+.typeface-mdnichrome { /* for just using the typeface */
+	font-family: 'MDNichrome', -apple-system, Helvetica, Arial, sans-serif;
+}
+
+/* MD Nichrome */
+@font-face {
+	font-family: 'ManifoldCF';
+	font-style: normal;
+	font-weight: 500;
+	font-display: swap;
+	src: url("../fonts/manifold/ManifoldCF-Regular.woff2?v=99.99") format("woff2"), url("../fonts/manifold/ManifoldCF-Regular.woff?v=99.99") format("woff");
+}
+
+@font-face {
+	font-family: 'ManifoldCF';
+	font-style: normal;
+	font-weight: 800;
+	font-display: swap;
+	src: url("../fonts/manifold/ManifoldCF-ExtraBold.woff2?v=99.99") format("woff2"), url("../fonts/manifold/ManifoldCF-ExtraBold.woff?v=99.99") format("woff");
+}
+
+.typeface-manifoldcf { /* for just using the typeface */
+	font-family: 'ManifoldCF', -apple-system, Helvetica, Arial, sans-serif;
+}
+
+
+
+/* Actual Type Stuff */
+
+/* Headings */
+
+.heading-one, h1 {
+	font-family: 'MDPrimer', -apple-system, Helvetica, Arial, sans-serif;
+	font-weight: 600;
+	font-size: 5rem;
+	line-height: 5rem;
+	letter-spacing:-0.04rem;
+	margin-top: 0em;
+	margin-bottom: 0.5em;
+}
+
+.heading-two, h2 {
+	font-family: 'MDPrimer', -apple-system, Helvetica, Arial, sans-serif;
+	font-weight: 600;
+	font-size: 3.75rem;
+	line-height: 3.75rem;
+	letter-spacing:-0.03rem;
+	margin-top: 0em;
+	margin-bottom: 1.25rem;
+}
+.heading-two em, h2 em {
+	color: var(--action-color);
+}
+
+.excerpt {
+	font-family: 'MDSystem', -apple-system, Helvetica, Arial, sans-serif;
+	font-weight: 600;
+	font-size: 1.5rem;
+	line-height: 2rem;
+	letter-spacing:-0.012rem;
+	margin-top: 0em;
+	margin-bottom: 1em;
+	opacity: 0.8;
+	color: var(--silver-color);
+}
+
+.paragraph, p {
+	font-family: 'MDSystem', -apple-system, Helvetica, Arial, sans-serif;
+	font-weight: 400;
+	font-size: 1.5rem;
+	line-height: 2rem;
+	letter-spacing:-0.012rem;
+	margin-top: 0em;
+	margin-bottom: 1em;
+}
+.paragraph strong { font-weight: 700; opacity:1.0; }
+.paragraph em     { font-style: italic; }
+
+.quote {
+	font-family: 'MDSystem', -apple-system, Helvetica, Arial, sans-serif;
+	font-weight: 500;
+	font-style: italic;
+	font-size: 1.75rem;
+	line-height: 2rem;
+	letter-spacing:-0.018rem;
+	margin-top: 0em;
+	margin-bottom: 1em;
+}
+
+.logo-font { /* Used for the logo in the header. */
+	font-family: 'MDNichrome', -apple-system, Helvetica, Arial, sans-serif;
+	font-weight: 700;
+	font-size: 1.875rem;
+	line-height: 2rem;
+	margin-top: 0em;
+	letter-spacing:1px;
+	margin-bottom: 1em;
+}
+
+.title-logo { /* Used for the logo in the header. */
+	font-family: 'MDNichrome', -apple-system, Helvetica, Arial, sans-serif;
+	color: var(--silver-color);
+	font-weight: 700;
+	font-size: 3.75rem;
+	line-height: 4rem;
+	margin-top: -2.25rem; /* On Scroll animate this property lower and lower. */
+	letter-spacing:-0.03rem;
+	margin-bottom: 0.25em;
+	z-index: 1000;
+	-webkit-transition: transform 0.1s 0s ease;
+	-moz-transition: transform 0.1s 0s ease;
+	-o-transition: transform 0.1s 0s ease;
+	transition: transform 0.1s 0s ease;
+}
+
+/* A content block has markup that's either been output by a wysywig, or is structured with very little special styles */
+.content * {
+	max-width: 32.5rem;
+}
+
+/* Define heading widths: */
+.content h1 {}
+.content h2 {}
+.content h3 {}
+.content h4 {}
+.content p:first-of-type {
+	font-weight:600;
+}
+.content p {
+	font-size: 1.5rem;
+	line-height:1.333em;
+	font-weight:500;
+}
+.content p strong { font-weight:600; }
+.content p em {font-style: italic;}
+.content p a {background:black; padding: 0.10rem 0.35rem; text-decoration: none;}
+.content p a:hover {color:black;background:var(--action-color); padding: 0.10rem 0.35rem; text-decoration: none;}
+.content ul {}
+.content ul li {}
+.content blockquote {}
+.content figure {}
+.content figure img {}
+.content figure figcaption {}
+/* <figure>
+	<img src="pic_trulli.jpg" alt="Trulli" style="width:100%">
+	<figcaption>Fig.1 - Trulli, Puglia, Italy.</figcaption>
+</figure> */

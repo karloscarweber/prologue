@@ -53,11 +53,11 @@
 .ta-justify { text-align:justify; }
 
 /* typeface measure */
-.really-wide { width: 100%; max-width: 80.25rem; } /* 1284px - Add an 80px padding here. */
-.full-measure { width: 100%; max-width: 61.25rem; } /* 980px */
-.half-measure { width: 100%; max-width: 61.25rem; } /* 490px */
-.wide-measure { width: 100%; max-width: 40rem; } /* 640px */
-.measure { width: 100%; max-width: 32.5rem; } /* 520px */
+.really-wide    { width: 100%; max-width: 80.25rem; } /* 1284px - Add an 80px padding here. */
+.full-measure   { width: 100%; max-width: 60rem; } /* 960px */
+.half-measure   { width: 100%; max-width: 30rem; } /* 480px */
+.wide-measure   { width: 100%; max-width: 40rem; } /* 640px */
+.measure        { width: 100%; max-width: 32.5rem; } /* 520px */
 .narrow-measure { width: 100%; max-width: 20rem; } /* 320px */
 
 /* Give sections padding */
@@ -71,4 +71,48 @@
 	.padded-section {
 		padding: 2rem;
 	}
+}
+
+/* New layout for most pages that feature sidebar */
+/* .reg-layout on the body means it's got the sidebar */
+.reg-layout {
+	display: grid;
+	width: 100%;
+	height: 100%;
+	/* background:blue; */
+
+	grid-template-columns:10rem 1fr;
+	grid-template-rows:10rem 1fr 10rem;
+	grid-template-areas:
+		"side main"
+		"menu main"
+		"footer"
+}
+
+.reg-layout .item-side {
+	grid-column-start: 1;
+	grid-column-end: 2;
+	grid-row-start: 1;
+	grid-row-end: 2;
+}
+
+.reg-layout .item-menu {
+	grid-column-start: 1;
+	grid-column-end: 2;
+	grid-row-start: 2;
+	grid-row-end: 3;
+}
+
+.reg-layout .item-main {
+	grid-column-start: 2;
+	grid-column-end: 3;
+	grid-row-start: 1;
+	grid-row-end: 3;
+}
+
+.reg-layout .item-footer {
+	grid-column-start: 1;
+	grid-column-end: 3;
+	grid-row-start: 3;
+	grid-row-end: 4;
 }
