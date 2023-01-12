@@ -208,13 +208,13 @@
 .content h2 {}
 .content h3 {}
 .content h4 {}
-.content p:first-of-type {
+/* .content p:first-of-type {
 	font-weight:600;
-}
+} */
 .content p {
 	font-size: 1.5rem;
-	line-height:1.333em;
-	font-weight:500;
+	line-height:1.5em;
+	font-weight:600;
 }
 .content p strong { font-weight:600; }
 .content p em {font-style: italic;}
@@ -247,6 +247,4 @@
 .content > *:nth-child(2) { transition-delay:0.25s; }
 .content > *:nth-child(3) { transition-delay:0.5s; }
 .content > *:nth-child(4) { transition-delay:0.75s; }
-.content > *:nth-child(5) { transition-delay:1s; }
-.content > *:nth-child(6) { transition-delay:1.25s; }
-.content > *:nth-child(1n+7) { transition-delay:1.25s; }
+.content > *:nth-child(1n+4) { transition-delay:0.75s; }
