@@ -136,7 +136,6 @@ if (stopper != undefined) {
 
 /* Setup revealer thing */
 const contentBlock = document.getElementsByClassName('content')[0]
-contentBlock.nodies =
 revealer = function() {
 	let wight = window.innerHeight
 	for (i = 0; i < contentBlock.children.length; i++) {
