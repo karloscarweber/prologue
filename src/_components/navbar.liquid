@@ -1,12 +1,13 @@
 <header class="header item-side">
-  <a href="/about" class="symbol-link"></a>
+  <a href="{{ '/' | relative_url }}" class="symbol-link"></a>
   <p class="ta-center logo-font">Prologue Productions</p>
 </header>
 
 <nav class="item-menu">
   <ul>
-    <li><a href="{{ '/' | relative_url }}">Home</a></li>
+    <li><a href="{{ '/services' | relative_url }}">Services</a></li>
+    <li><a href="{{ '/projects' | relative_url }}">Projects</a></li>
     <li><a href="{{ '/about' | relative_url }}">About</a></li>
-    <li><a href="{{ '/posts' | relative_url }}">Posts</a></li>
+    <li><a href="{{ '/contact' | relative_url }}">Contact</a></li>
   </ul>
 </nav>

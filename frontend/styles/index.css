@@ -96,6 +96,7 @@ body.reg-layout > header a.symbol-link {
   max-width: 4rem;
   background-size: 4rem 4rem;
   background-image: url("/images/logo.png");
+  background-image: url("/images/logo-original.png");
   /* -webkit-transition: transform 0.1s 0s ease;
   -moz-transition: transform 0.1s 0s ease;
   -o-transition: transform 0.1s 0s ease;

@@ -192,6 +192,7 @@ main {
 	width:200px;
 	height:200px;
 	background-image: url("/images/logo.png");
+	background-image: url("/images/logo-original.png");
 	background-size: 200px 200px;
 	background-position: center center;
 	background-repeat: no-repeat;
