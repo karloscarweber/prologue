@@ -36,13 +36,10 @@ sizey = function() {
 }
 if (freelancer != undefined) {
 	sizey();
+	window.addEventListener('resize', function(event) {
+		sizey()
+	}, true);
 }
-
-
-window.addEventListener('resize', function(event) {
-	sizey()
-}, true);
-
 
 // Event Logging
 const logsnag = new window.LogSnag({
