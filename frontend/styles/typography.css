@@ -199,8 +199,8 @@
 }
 
 /* A content block has markup that's either been output by a wysywig, or is structured with very little special styles */
-.content * {
-	max-width: 32.5rem;
+.content > * {
+	max-width: 60rem;
 }
 
 /* Define heading widths: */
@@ -230,3 +230,22 @@
 	<img src="pic_trulli.jpg" alt="Trulli" style="width:100%">
 	<figcaption>Fig.1 - Trulli, Puglia, Italy.</figcaption>
 </figure> */
+
+
+/* Reveal effect */
+.to-reveal, .content > * {
+	transition: transform 0.7s ease-in-out, opacity 0.7s ease-in-out;
+	opacity: 0.0;
+	transform: translateY(2rem);
+}
+.to-reveal.revealed, .content > *.revealed {
+	opacity: 1.0;
+	transform: translateY(0rem);
+}
+
+.content > *:nth-child(1) { transition-delay:1s; }
+.content > *:nth-child(2) { transition-delay:1.5s; }
+.content > *:nth-child(3) { transition-delay:2s; }
+.content > *:nth-child(4) { transition-delay:2.5s; }
+.content > *:nth-child(5) { transition-delay:3s; }
+.content > *:nth-child(6) { transition-delay:3.5s; }

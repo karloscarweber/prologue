@@ -7,12 +7,14 @@ import {parallaxController} from "parallaxative.js"
 
 console.info("Bridgetown is loaded! and working.")
 
+/* setup parallax */
 scrollyscroll = function() {
 	parallaxController.scrollHandler();
 	window.requestAnimationFrame( scrollyscroll );
 }
 scrollyscroll();
 
+/* Setup controlled text */
 freelancer = document.getElementsByClassName("ostentatious-font")[0];
 let control = 1680; // represents max screen width
 let magicNumber = 17; // represents font size at that screenwidth
@@ -29,17 +31,17 @@ sizey = function() {
 	}
 
 	let transform = ""+gamma+"rem";
-	console.log(transform)
+	// console.log(transform)
 	freelancer.style.fontSize = transform;
 }
-sizey();
+if (freelancer != undefined) {
+	sizey();
+}
 
 
 window.addEventListener('resize', function(event) {
 	sizey()
 }, true);
-
-
 
 
 // Event Logging
@@ -109,13 +111,13 @@ const buyRetainerQuarterly = document.querySelector("#action-buy-a-retainer-quar
 const designerCollaborate = document.querySelector("#action-designer-collaborate");
 const sayHello = document.querySelector("#action-say-hello");
 
-bookCall.addEventListener("click", book_meeting_event, false);
-buyRetainerMonthly.addEventListener("click", buy_monthly, false);
-buyRetainerQuarterly.addEventListener("click", buy_quarterly, false);
-designerCollaborate.addEventListener("click", designer_interested_event, false);
-sayHello.addEventListener("click", say_hello_event, false);
+if (bookCall != undefined) { bookCall.addEventListener("click", book_meeting_event, false); }
+if (buyRetainerMonthly != undefined) { buyRetainerMonthly.addEventListener("click", buy_monthly, false); }
+if (buyRetainerQuarterly != undefined) { buyRetainerQuarterly.addEventListener("click", buy_quarterly, false); }
+if (designerCollaborate != undefined) { designerCollaborate.addEventListener("click", designer_interested_event, false); }
+if (sayHello != undefined) { sayHello.addEventListener("click", say_hello_event, false); }
 
-// Menu thing
+/* setup menu thing */
 const stopper = document.getElementsByClassName('reaches-top')[0]
 const menu = document.getElementsByClassName('header')[0]
 show_hide_menu = function() {
@@ -128,4 +130,24 @@ show_hide_menu = function() {
 	}
 	window.requestAnimationFrame( show_hide_menu );
 }
-show_hide_menu()
+if (stopper != undefined) {
+	show_hide_menu()
+}
+
+/* Setup revealer thing */
+const contentBlock = document.getElementsByClassName('content')[0]
+contentBlock.nodies =
+revealer = function() {
+	let wight = window.innerHeight
+	for (i = 0; i < contentBlock.children.length; i++) {
+		// element = contentBlock.children[i]
+		// console.log(contentBlock.children[i].getBoundingClientRect().top)
+		if (contentBlock.children[i].getBoundingClientRect().top < wight && !contentBlock.children[i].classList.contains('revealed')) {
+			contentBlock.children[i].classList.add('revealed');
+		}
+	}
+}
+if (contentBlock != undefined) {
+	document.addEventListener("scroll", revealer);
+	revealer()
+}
