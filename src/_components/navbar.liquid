@@ -1,13 +1,17 @@
 <header class="header item-side">
   <a href="{{ '/' | relative_url }}" class="symbol-link"></a>
-  <p class="ta-center logo-font">Prologue Productions</p>
+  <a href="{{ '/' | relative_url }}"><p class="ta-center logo-font">Prologue Productions</p></a>
 </header>
 
 <nav class="item-menu">
+  <p id="open-close-menu-button">
+    <span>Menu</span>
+    {% render "chevron" %}
+  </p>
   <ul>
     <li><a href="{{ '/services' | relative_url }}">Services</a></li>
     <li><a href="{{ '/projects' | relative_url }}">Projects</a></li>
     <li><a href="{{ '/about' | relative_url }}">About</a></li>
-    <li><a href="{{ '/contact' | relative_url }}">Contact</a></li>
+    <li><a id="action-say-hello" href="mailto:{{ metadata.email }}">Contact</a></li>
   </ul>
 </nav>

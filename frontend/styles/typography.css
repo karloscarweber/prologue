@@ -199,18 +199,18 @@
 }
 
 /* A content block has markup that's either been output by a wysywig, or is structured with very little special styles */
-.content > * {
+.content > h1, .content > h2, .content > h3, .content > h4, .content > p, .content > ul, .content > blockquote, .content > figure {
 	max-width: 60rem;
 }
-
 /* Define heading widths: */
-.content h1 {}
-.content h2 {}
-.content h3 {}
-.content h4 {}
-/* .content p:first-of-type {
-	font-weight:600;
-} */
+.content h1 { font-size: 5rem; line-height: 1em;}
+.content h2 { font-size: 4rem; line-height: 1em;}
+.content h3 { font-size: 3rem; line-height: 1em;}
+.content h4 { font-size: 2rem; line-height: 1em;}
+.content h1, .content h2, .content h3, .content h4 {
+	margin-top: 2em;
+	margin-bottom: 0.75em;
+}
 .content p {
 	font-size: 1.5rem;
 	line-height:1.5em;
@@ -231,20 +231,58 @@
 	<figcaption>Fig.1 - Trulli, Puglia, Italy.</figcaption>
 </figure> */
 
-
 /* Reveal effect */
-.to-reveal, .content > * {
+.to-reveal {
 	transition: transform 0.7s ease-in-out, opacity 0.7s ease-in-out;
 	opacity: 0.0;
 	transform: translateY(2rem);
 }
-.to-reveal.revealed, .content > *.revealed {
+.to-reveal.revealed {
 	opacity: 1.0;
 	transform: translateY(0rem);
 }
 
-.content > *:nth-child(1) { transition-delay:0s; }
-.content > *:nth-child(2) { transition-delay:0.25s; }
-.content > *:nth-child(3) { transition-delay:0.5s; }
-.content > *:nth-child(4) { transition-delay:0.75s; }
-.content > *:nth-child(1n+4) { transition-delay:0.75s; }
+.content > * {
+	opacity: 0.0;
+	transform: translateY(2rem);
+}
+
+@keyframes reveal {
+	from {opacity: 0.0; transform: translateY(2rem);}
+	to {opacity: 1.0; transform: translateY(0rem);}
+}
+.content > *:nth-child(1)    { animation-delay:0s; }
+.content > *:nth-child(2)    { animation-delay:0.15s; }
+.content > *:nth-child(3)    { animation-delay:0.3s; }
+.content > *:nth-child(4)    { animation-delay:0.45s; }
+.content > *:nth-child(5)    { animation-delay:0.6s; }
+.content > *:nth-child(6)    { animation-delay:0.75s; }
+.content > *:nth-child(7)    { animation-delay:0.9s; }
+.content > *:nth-child(8)    { animation-delay:1.05s; }
+.content > *:nth-child(9)    { animation-delay:1.20s; }
+.content > *:nth-child(10)    { animation-delay:1.35s; }
+.content > *:nth-child(1n+11) { animation-delay:1.5s; }
+.content > * {
+	animation: 0.7s 1 normal reveal;
+	animation-fill-mode: forwards;
+}
+
+/* Adjusted font-sizes for mobile stuff. */
+@media (max-width: 600px) {
+	.heading-one, h1 { font-size: 3rem; }
+	.content h1 { font-size: 3rem;   }
+	.content h2 { font-size: 2.5rem; }
+	.content h3 { font-size: 2rem;   }
+	.content h4 { font-size: 1.5rem; }
+	.content p  { font-size: 1rem;}
+	.content p strong { }
+	.content p em {}
+	.content p a {}
+	.content p a:hover {}
+	.content ul {}
+	.content ul li {}
+	.content blockquote {}
+	.content figure {}
+	.content figure img {}
+	.content figure figcaption {}
+}

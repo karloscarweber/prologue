@@ -20,7 +20,6 @@ let control = 1680; // represents max screen width
 let magicNumber = 17; // represents font size at that screenwidth
 sizey = function() {
 	let gamma = (window.innerWidth/control)
-	console.log(gamma)
 
 	let deltaForce = magicNumber / control
 
@@ -31,7 +30,6 @@ sizey = function() {
 	}
 
 	let transform = ""+gamma+"rem";
-	// console.log(transform)
 	freelancer.style.fontSize = transform;
 }
 if (freelancer != undefined) {
@@ -118,8 +116,6 @@ if (sayHello != undefined) { sayHello.addEventListener("click", say_hello_event,
 const stopper = document.getElementsByClassName('reaches-top')[0]
 const menu = document.getElementsByClassName('header')[0]
 show_hide_menu = function() {
-	// console.log("show_hide_menu:, stopper.getBoundingClientRect().top :", stopper.getBoundingClientRect().top )
-	// console.log("!menu.classList.contains('visible'):", !menu.classList.contains('visible'))
 	if (stopper.getBoundingClientRect().top < 0 && !menu.classList.contains('visible')) {
 		menu.classList.add("visible");
 	} else if (stopper.getBoundingClientRect().top > 0 && menu.classList.contains('visible')) {
@@ -136,8 +132,6 @@ const contentBlock = document.getElementsByClassName('content')[0]
 revealer = function() {
 	let wight = window.innerHeight
 	for (i = 0; i < contentBlock.children.length; i++) {
-		// element = contentBlock.children[i]
-		// console.log(contentBlock.children[i].getBoundingClientRect().top)
 		if (contentBlock.children[i].getBoundingClientRect().top < wight && !contentBlock.children[i].classList.contains('revealed')) {
 			contentBlock.children[i].classList.add('revealed');
 		}
@@ -146,4 +140,15 @@ revealer = function() {
 if (contentBlock != undefined) {
 	document.addEventListener("scroll", revealer);
 	revealer()
+}
+
+/* setup menu thing */
+const menubutton = document.getElementById('open-close-menu-button')
+const main = document.getElementsByClassName('item-main')[0]
+nudge_main = function() {
+	main.classList.toggle('nudged');
+	menubutton.classList.toggle('flipped');
+}
+if (menubutton != undefined) {
+	menubutton.addEventListener("click", nudge_main, false);
 }

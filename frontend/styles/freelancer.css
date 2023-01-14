@@ -228,6 +228,7 @@ main {
 }
 .price-card h2, .price-card p {
 	color: black;
+	font-size:1.25rem;
 }
 .price-card h2 {
 	font-size:3rem;
