@@ -4,7 +4,6 @@
 /* Header/nav/title logo stuff */
 /* Header specific styles */
 body > header {
-	/* margin: 1rem; */
 	text-align: center;
 	padding: 1rem 0rem;
 	position: fixed;
@@ -24,7 +23,6 @@ body > header.visible {
 	pointer-events: all;
 	opacity: 1.0;
 }
-
 body.reg-layout > header {
 	box-sizing: border-box;
 	position: relative;
@@ -33,10 +31,28 @@ body.reg-layout > header {
 	padding:1.25rem;
 	pointer-events: all;
 }
-body.reg-layout > header > .logo-font {
+body.reg-layout > header > p.logo-font {
 	text-align:left;
 	font-size: 1.5rem;
 	line-height: 1em;
+}
+/* When we have reg-layout and it's small AND on the index page. */
+body.reg-layout.index > header  {
+	display: flex;
+	flex-direction: row;
+	z-index: 100;
+}
+
+body.reg-layout.index > header > a > p {
+	display: block;
+	max-width: 200px;
+	margin-left: 1rem;
+	margin-top: 0.5rem;
+	text-align:left;
+	font-size: 1.5rem;
+	line-height: 1em;
+	color:var(--heading-color);
+	text-decoration:none;
 }
 @media (max-width: 960px) {
 
@@ -60,7 +76,7 @@ body.reg-layout > header > .logo-font {
 }
 
 @media (max-width: 600px) {
-	header > .logo-font {
+	header > p.logo-font {
 		display: none;
 	}
 }
@@ -187,11 +203,6 @@ body.reg-layout #open-close-menu-button {
 #open-close-menu-button {
 	display:none;
 }
-/* @media (max-width: 960px) {
-	#open-close-menu-button {
-		display:none;
-	}
-} */
 @media (min-width: 961px) {
 	body.reg-layout #open-close-menu-button {
 		display:none;

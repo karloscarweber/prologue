@@ -12,9 +12,11 @@ layout: index
 
 
 <div class="row tall-boy">
-	<section class="full-measure">
-		<h2>Prologue Productions is an Engineering Studio</h2>
-		<p>We make Apps and websites using Swift, Ruby, HTML, CSS, and JavaScript.</p>
+	<section class="half-measure">
+		<p class="paragraph">We design and develop Apps and Websites with an emphasis on Engineering. We strive to work with the best artists and  designers to craft the most astonishing experiences imaginable.</p>
+		<p class="paragraph">We absolutely love the web.</p>
+		<p class="paragraph"><a href="#" class="button-link">Hire Us</a> to work on your project.</p>
+		<p><a href="#" class="button-link">Hire Us</a></p>
 	</section>
 </div>
 
