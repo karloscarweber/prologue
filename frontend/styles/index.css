@@ -54,6 +54,9 @@ main {
   }
   background-color:transparent;
 }
+.reg-layout.index main {
+  border-left: none;
+}
 @media (max-width: 960px) {
   .reg-layout main {
     padding: 2rem;

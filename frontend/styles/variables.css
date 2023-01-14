@@ -6,8 +6,9 @@
 	--p3-body-color: black;
 	--heading-color: black;
 	--action-color: #C5F13F;
-	--silver-color: #E7E7E7;
-	--stone-color: #B4BCCA;
+	--silver-color: #E7E7E7; /* Old Silver */
+	--silver-color: #FFF4E1;
+	/* --stone-color: #B4BCCA; */
 }
 
 
@@ -15,7 +16,8 @@
 @supports (color: color(display-p3 1 1 1)) {
 	:root {
 		--action-color: color(display-p3 0.772 0.945 0.247 / 1);
-		--silver-color: color(display-p3 0.905 0.905 0.905 / 1);
+		/* --silver-color: color(display-p3 0.905 0.905 0.905 / 1); */
+		--silver-color: color(display-p3 1.000 0.957 0.882 / 1);
 		--stone-color: color(display-p3 0.705 0.737 0.792 / 1);
 	}
 }

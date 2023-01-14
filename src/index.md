@@ -10,13 +10,11 @@ layout: index
 	<p class="excerpt ta-center full-measure">An Engineering Studio</p>
 </div>
 
-
 <div class="row tall-boy">
 	<section class="half-measure">
-		<p class="paragraph">We design and develop Apps and Websites with an emphasis on Engineering. We strive to work with the best artists and  designers to craft the most astonishing experiences imaginable.</p>
-		<p class="paragraph">We absolutely love the web.</p>
-		<p class="paragraph"><a href="#" class="button-link">Hire Us</a> to work on your project.</p>
-		<p><a href="#" class="button-link">Hire Us</a></p>
+		<p class="paragraph ta-justify">We design and develop Apps and Websites with an emphasis on Engineering. We strive to work with the best artists and  designers to craft the most astonishing experiences imaginable.</p>
+		<p class="paragraph ta-justify">We absolutely love the web.</p>
+		<p class="paragraph ta-justify"><a href="mailto:{{ site.metadata.email }}?subject=Lets work Together" class="button-link" id="action-hire-us">Hire Us</a> to work on your project.</p>
 	</section>
 </div>
 

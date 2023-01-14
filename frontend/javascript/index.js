@@ -93,7 +93,19 @@ let say_hello_event = function() {
 		channel: "work-interest",
 		event: "Say Hello",
 		description: "Someone is going to say hello!",
-		icon: "🎨",
+		icon: "✉️",
+		notify: true
+	})
+	.then(result => console.log(result))
+	.catch(error => console.log(error));
+}
+
+let hire_us_event = function() {
+	logsnag.publish({
+		channel: "work-interest",
+		event: "Hire Us",
+		description: "Someone is going to Hire You. Expect an email!",
+		icon: "✉️",
 		notify: true
 	})
 	.then(result => console.log(result))
@@ -105,12 +117,14 @@ const buyRetainerMonthly = document.querySelector("#action-buy-a-retainer-monthl
 const buyRetainerQuarterly = document.querySelector("#action-buy-a-retainer-quarterly");
 const designerCollaborate = document.querySelector("#action-designer-collaborate");
 const sayHello = document.querySelector("#action-say-hello");
+const hireUs = document.querySelector("#action-hire-us");
 
 if (bookCall != undefined) { bookCall.addEventListener("click", book_meeting_event, false); }
 if (buyRetainerMonthly != undefined) { buyRetainerMonthly.addEventListener("click", buy_monthly, false); }
 if (buyRetainerQuarterly != undefined) { buyRetainerQuarterly.addEventListener("click", buy_quarterly, false); }
 if (designerCollaborate != undefined) { designerCollaborate.addEventListener("click", designer_interested_event, false); }
 if (sayHello != undefined) { sayHello.addEventListener("click", say_hello_event, false); }
+if (hireUs != undefined) { hireUs.addEventListener("click", hire_us_event, false); }
 
 /* setup menu thing */
 const stopper = document.getElementsByClassName('reaches-top')[0]
