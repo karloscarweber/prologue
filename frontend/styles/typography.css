@@ -309,6 +309,7 @@
 	padding: 0.10rem 0.35rem;
 	margin-left: -0.35rem;
 	text-decoration: none;
+	margin-right: -0.35rem;
 }
 .button-link:hover {
 	color:black;

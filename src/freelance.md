@@ -29,28 +29,36 @@ layout: freelance
 		<h2 class="heading-two ta-left">Services</h2>
 	</div>
 	<div class="measure">
-		<h3>iOS Development</h3>
-		<p>SwiftUI, UIKit, GRDB, all those fancy animation frameworks.</p>
+		<h4>iOS Development</h4>
+		<p class="paragraph withered">SwiftUI, UIKit, GRDB, all those fancy animation frameworks.</p>
 		<br>
 		<br>
-		<h3>Ruby Development</h3>
-		<p>Camping, Ruby on Rails, Roda, Sinatra, Bridgetown. We love Ruby.</p>
+		<h4>Ruby Development</h4>
+		<p class="paragraph withered">Camping, Ruby on Rails, Roda, Sinatra, Bridgetown. We love Ruby.</p>
 		<br>
 		<br>
-		<h3>Web Development</h3>
-		<p>HTML, CSS, JavaScript. All the basics at the Vanilla level. Alpine.js, Svelte.js, Stimulus, Sass.</p>
+		<h4>Web Development</h4>
+		<p class="paragraph withered">HTML, CSS, JavaScript. All the basics at the Vanilla level. Alpine.js, Svelte.js, Stimulus, Sass.</p>
+	</div>
+</section>
+</div>
+
+<div class="row darkened">
+<section class="columned really-wide padded-section">
+	<div class="measure">
+		<h2 class="heading-two ta-left">Hire Us</h2>
+	</div>
+	<div class="measure">
+		<p class="paragraph withered">We only work on a retainer basis. To get started we hold a project assessment, and a little meeting.</p>
+		<p class="paragraph withered">Pause or Cancel at anytime.</p>
+		<p class="paragraph"><a target="_blank" class="button-link" href="https://calendly.com/kowfm/meet-prologue" id="action-book-a-call">Book a Call to see if this is a good fit.</a></p>
+		<p>Or... Just buy a subscription below</p>
 	</div>
 </section>
 </div>
 
 <div class="row darkened">
 <section class="really-wide padded-section">
-	<div class="measure">
-		<h2 class="heading-two ta-left">Retain Us</h2>
-		<p class="paragraph withered">We only work on a retainer basis. To get started we hold a project assessment, and charge $500 to start service.</p>
-		<p class="paragraph withered">Pause or Cancel at anytime.</p>
-		<p class="paragraph"><a target="_blank" class="button-link" href="https://calendly.com/kowfm/meet-prologue" id="action-book-a-call">Book a Call to see if this is a good fit.</a></p>
-	</div>
 	{% render "pricing" %}
 </section>
 </div>
