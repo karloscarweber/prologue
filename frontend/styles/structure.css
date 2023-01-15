@@ -27,7 +27,7 @@
 	}
 }
 .row.tall-boy { /* At least as tall as the page. */
-	min-height: 100vh;
+	min-height: calc(100vh - 11rem );
 }
 
 .row.darkened {

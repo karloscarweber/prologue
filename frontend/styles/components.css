@@ -154,8 +154,8 @@ body > nav ul {
 	font-weight: bold;
 	z-index: 900;
 }
-@media (max-width: 900px) {
-	body.reg-layout.index > nav ul {
+@media (max-width: 600px) {
+	body.reg-layout > nav ul {
 		font-size: 1rem;
 	}
 }
@@ -213,16 +213,28 @@ body.reg-layout #open-close-menu-button {
 		display:none;
 	}
 }
-#open-close-menu-button p {
+#open-close-menu-button span {
 	font-family: 'MDSystem', -apple-system, Helvetica, Arial, sans-serif;
 	font-weight: 600;
 	text-decoration:none;
 	font-size:1.5rem;
 	line-height:1.5em;
 	text-align: center;
+	transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+	transform: rotateX(0deg);
+	opacity: 1.0;
+	transform-origin: top center;
 }
 #open-close-menu-button svg {
-
+	transition: transform 0.3s ease-in-out;
+	transform: rotateX(0deg) translateY(0rem);
+}
+#open-close-menu-button.flipped svg {
+	transform: rotateX(180deg) translateY(0.5rem);
+}
+#open-close-menu-button.flipped span {
+	transform: rotateX(90deg);
+	opacity: 0.0;
 }
 
 footer ul{

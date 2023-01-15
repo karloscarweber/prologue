@@ -235,8 +235,8 @@
 }
 .content > p strong { font-weight:600; }
 .content > p em {font-style: italic;}
-.content > p a { padding: 0.10rem 0.35rem; text-decoration: none; margin-left: -0.35rem;}
-.content > p a:hover {color:black;background:var(--action-color); padding: 0.10rem 0.35rem; text-decoration: none;}
+.content > p a { color: var(--action-color); padding: 0.10rem 0.35rem; text-decoration: none; margin-left: -0.35rem; margin-right: -0.35rem;}
+.content > p a:hover {color:black; background:var(--action-color); text-decoration: none;}
 .content > ul {}
 .content > ul li {}
 .content > blockquote {}
@@ -314,6 +314,4 @@
 .button-link:hover {
 	color:black;
 	background:var(--action-color);
-	padding: 0.10rem 0.35rem;
-	text-decoration: none;
 }
