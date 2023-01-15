@@ -154,6 +154,11 @@ body > nav ul {
 	font-weight: bold;
 	z-index: 900;
 }
+@media (max-width: 900px) {
+	body.reg-layout.index > nav ul {
+		font-size: 1rem;
+	}
+}
 body > nav a {
 	text-decoration: none;
 }
@@ -219,5 +224,3 @@ body.reg-layout #open-close-menu-button {
 #open-close-menu-button svg {
 
 }
-
-

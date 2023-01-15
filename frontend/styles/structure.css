@@ -208,7 +208,6 @@ column > *:last-child {
 	grid-row-end: 2;
 }
 
-
 body.reg-layout.index > nav ul {
 	flex-direction: row;
 	margin: 0;
