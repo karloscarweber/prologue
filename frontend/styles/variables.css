@@ -5,7 +5,7 @@
 	--body-color: black;
 	--p3-body-color: black;
 	--heading-color: black;
-	--darkend-color: #0D081D;
+	--darkened-color: #0D081D;
 	--action-color: #C5F13F;
 	--silver-color: #E7E7E7; /* Old Silver */
 	--silver-color: #FFF4E1;
@@ -24,7 +24,7 @@
 /* Display-P3 color, when supported. */
 @supports (color: color(display-p3 1 1 1)) {
 	:root {
-		--darkend-color:color(display-p3 0.051 0.031 0.113 / 1);
+		--darkened-color:color(display-p3 0.051 0.031 0.113 / 1);
 		--action-color: color(display-p3 0.772 0.945 0.247 / 1);
 		--silver-color: color(display-p3 0.905 0.905 0.905 / 1); /* Old silver */
 		--silver-color: color(display-p3 1.000 0.957 0.882 / 1);

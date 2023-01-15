@@ -7,7 +7,7 @@
 
 /* refacter this next part to be on the freelancer namespace instead of be the default. */
 body {
-	background-color:#0D081D;
+	background-color:var(--darkened-color);
 	background-size: cover;
 	background-position: center center;
 	background-repeat: no-repeat;
@@ -377,9 +377,25 @@ body.reg-layout .price-card.outlined p, body.reg-layout .price-card.outlined h3 
 
 /* The White thing. */
 .patterned-row .title-logo, .patterned-row .excerpt { /* Used for the logo in the header. */
-	color: #0D081D; opacity: 1.0; z-index: 1000;
+	color: var(--darkened-color);
+	opacity: 1.0;
+	z-index: 1000;
 }
 
 body.freelance-page > nav, body.freelance-page > header {
 	display:none;
+}
+
+/* Designer Row */
+.designer-row {
+	box-shadow:
+	0 -10px 0 var(--action-color),
+	0 -20px 0 var(--darkened-color),
+	0 -30px 0 var(--action-color),
+	0 -40px 0 var(--darkened-color),
+	0 -50px 0 var(--action-color),
+	0 -60px 0 var(--darkened-color),
+	0 -80px 0 var(--action-color);
+	margin-top: 16rem;
+	padding-top: 0 !important;
 }

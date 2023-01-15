@@ -305,7 +305,6 @@
 }
 
 .button-link {
-	/* background:black; */
 	padding: 0.10rem 0.35rem;
 	margin-left: -0.35rem;
 	text-decoration: none;
@@ -314,4 +313,17 @@
 .button-link:hover {
 	color:black;
 	background:var(--action-color);
+}
+
+.button-link.opposite {
+	padding: 0.10rem 0.35rem;
+	margin-left: -0.35rem;
+	text-decoration: none;
+	margin-right: -0.35rem;
+	color:black;
+	background:var(--action-color);
+}
+.button-link.opposite:hover {
+	color:var(--action-color);
+	background:black;
 }
