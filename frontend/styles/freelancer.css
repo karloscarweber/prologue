@@ -217,7 +217,7 @@ main {
 .price-card {
 	display:block;
 	width: 100%;
-	max-width:320px;
+	max-width:360px;
 	height:auto;
 	min-height:500px;
 	box-sizing:border-box;
@@ -227,6 +227,7 @@ main {
 }
 .price-card h2, .price-card p {
 	color: black;
+	color: var(--silver-color);
 	font-size:1.25rem;
 }
 .price-card h2 {
@@ -261,20 +262,19 @@ main {
 	font-size: 1.125rem;
 }
 
-
-/*
-			<p class="price">$7,499/<span>month</span></p>
-<p class="price-subtext">Cancel Anytime</p> */
-
+/* price card info */
 .price-card.outlined {
 	background:transparent;
 	border: solid 3px #8D9197;
 	color: var(--silver-color);
 }
-
-.price-card.outlined p, .price-card.outlined h3 {
-	color: var(--silver-color);
+body.reg-layout .price-card.outlined {
+		border: solid 3px black;
+		color: black;
 }
+
+.price-card.outlined p, .price-card.outlined h3 { color: var(--silver-color); }
+body.reg-layout .price-card.outlined p, body.reg-layout .price-card.outlined h3 { color: black; }
 .price-card.outlined h3 {
 	font-size: 2rem;
 	line-height:1em;
@@ -286,6 +286,24 @@ main {
 	font-family: 'MDSystem', -apple-system, Helvetica, Arial, sans-serif;
 }
 
+@media (min-width: 1201px) and (max-width: 1400px) {
+	body.reg-layout .card-container {
+		justify-content: space-around;
+	}
+	body.reg-layout .price-card {
+		margin-bottom: 5rem;
+	}
+	body.reg-layout .price-card.outlined {
+		max-width: 100%;
+		display:flex;
+		justify-content: space-between;
+		gap: 5rem;
+		min-height: auto;
+	}
+	body.reg-layout .price-card.outlined div {
+		width: 50%;
+	}
+}
 
 @media (max-width: 1200px) {
 	.card-container {
@@ -306,9 +324,10 @@ main {
 	}
 }
 
+
 @media (max-width: 800px) {
 	.price-card.outlined {
-		max-width: 320px;
+		max-width: 360px;
 		display:block;
 	}
 	.price-card.outlined div {
@@ -332,3 +351,6 @@ main {
 	color: #0D081D; opacity: 1.0; z-index: 1000;
 }
 
+body.freelance-page > nav, body.freelance-page > header {
+	display:none;
+}

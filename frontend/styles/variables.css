@@ -5,19 +5,38 @@
 	--body-color: black;
 	--p3-body-color: black;
 	--heading-color: black;
+	--darkend-color: #0D081D;
 	--action-color: #C5F13F;
 	--silver-color: #E7E7E7; /* Old Silver */
 	--silver-color: #FFF4E1;
-	/* --stone-color: #B4BCCA; */
-}
+	--stone-color: #B4BCCA;
 
+	--pr-brand-yellow:   #FFA01E;
+	--pr-brand-apricot:  #FF4678;
+	--pr-brand-magenta:  #EB00AA;
+	--pr-brand-purple:   #A000C8;
+	--pr-brand-midnight: #5A00B4;
+
+	--action-color: var(--pr-brand-apricot);
+	--stone-color: var(--pr-brand-midnight);
+}
 
 /* Display-P3 color, when supported. */
 @supports (color: color(display-p3 1 1 1)) {
 	:root {
+		--darkend-color:color(display-p3 0.051 0.031 0.113 / 1);
 		--action-color: color(display-p3 0.772 0.945 0.247 / 1);
-		/* --silver-color: color(display-p3 0.905 0.905 0.905 / 1); */
+		--silver-color: color(display-p3 0.905 0.905 0.905 / 1); /* Old silver */
 		--silver-color: color(display-p3 1.000 0.957 0.882 / 1);
 		--stone-color: color(display-p3 0.705 0.737 0.792 / 1);
+
+		--pr-brand-yellow:    color(display-p3 1.00 0.627 0.117 / 1);
+		--pr-brand-apricot:   color(display-p3 1.00 0.274 0.470 / 1);
+		--pr-brand-magenta:   color(display-p3 0.922 0.00 0.666 / 1);
+		--pr-brand-purple:    color(display-p3 0.627 0.00 0.784 / 1);
+		--pr-brand-midnight:  color(display-p3 0.353 0.00 0.706 / 1);
+
+		--action-color: var(--pr-brand-apricot);
+		--stone-color: var(--pr-brand-midnight);
 	}
 }

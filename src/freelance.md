@@ -31,15 +31,19 @@ layout: freelance
 	<div class="measure">
 		<h3>iOS Development</h3>
 		<p>SwiftUI, UIKit, GRDB, all those fancy animation frameworks.</p>
+		<br>
+		<br>
 		<h3>Ruby Development</h3>
 		<p>Camping, Ruby on Rails, Roda, Sinatra, Bridgetown. We love Ruby.</p>
+		<br>
+		<br>
 		<h3>Web Development</h3>
-		<p>HTML, CSS, JavaScript. All the basics at the Vanilla level. Alpine.js, Stimulus, Sass.</p>
+		<p>HTML, CSS, JavaScript. All the basics at the Vanilla level. Alpine.js, Svelte.js, Stimulus, Sass.</p>
 	</div>
 </section>
 </div>
 
-<div class="row darkened vertically-padded">
+<div class="row darkened">
 <section class="really-wide padded-section">
 	<div class="measure">
 		<h2 class="heading-two ta-left">Retain Us</h2>

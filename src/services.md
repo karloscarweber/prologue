@@ -26,6 +26,6 @@ title: Services
 		<h4>Web Development</h4>
 	</column>
 	<column>
-		<p>HTML, CSS, JavaScript. All the basics at the Vanilla level. Alpine.js, Stimulus, Sass.</p>
+		<p>HTML, CSS, JavaScript. All the basics at the Vanilla level. Alpine.js, Svelte.js, Stimulus, Sass.</p>
 	</column>
 </columns>
