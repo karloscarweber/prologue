@@ -117,6 +117,7 @@ const buyRetainerMonthly = document.querySelector("#action-buy-a-retainer-monthl
 const buyRetainerQuarterly = document.querySelector("#action-buy-a-retainer-quarterly");
 const designerCollaborate = document.querySelector("#action-designer-collaborate");
 const sayHello = document.querySelector("#action-say-hello");
+const contactUs = document.querySelector("#action-contact-us");
 const hireUs = document.querySelector("#action-hire-us");
 
 if (bookCall != undefined) { bookCall.addEventListener("click", book_meeting_event, false); }
@@ -124,6 +125,7 @@ if (buyRetainerMonthly != undefined) { buyRetainerMonthly.addEventListener("clic
 if (buyRetainerQuarterly != undefined) { buyRetainerQuarterly.addEventListener("click", buy_quarterly, false); }
 if (designerCollaborate != undefined) { designerCollaborate.addEventListener("click", designer_interested_event, false); }
 if (sayHello != undefined) { sayHello.addEventListener("click", say_hello_event, false); }
+if (contactUs != undefined) { contactUs.addEventListener("click", say_hello_event, false); }
 if (hireUs != undefined) { hireUs.addEventListener("click", hire_us_event, false); }
 
 /* setup menu thing */
