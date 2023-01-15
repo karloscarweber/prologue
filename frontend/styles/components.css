@@ -190,7 +190,7 @@ body.reg-layout > nav a {
 }
 body.reg-layout > nav a:hover {
 	color:var(--action-color);
-	background:black;
+	/* background:black; */
 }
 body.reg-layout #open-close-menu-button {
 	position: absolute;
@@ -223,4 +223,15 @@ body.reg-layout #open-close-menu-button {
 }
 #open-close-menu-button svg {
 
+}
+
+footer ul{
+	display: flex;
+	margin: 0 auto;
+	width: auto;
+	text-align: center;
+	list-style: none;
+	justify-content: center;
+	gap: 1rem;
+	padding:0;
 }

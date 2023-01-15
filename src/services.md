@@ -29,3 +29,5 @@ title: Services
 		<p>HTML, CSS, JavaScript. All the basics at the Vanilla level. Alpine.js, Svelte.js, Stimulus, Sass.</p>
 	</column>
 </columns>
+
+<p class="paragraph ta-justify"><a href="mailto:{{ site.metadata.email }}?subject=Lets work Together" class="button-link" id="action-hire-us">Hire Us</a> to work on your project.</p>

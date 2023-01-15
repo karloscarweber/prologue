@@ -12,3 +12,5 @@ That's what I want to do.
 Prologue is an engineering studio that makes remarkable Apps and Websites.
 
 What's Past is Prologue, everything that's come before has led us to this moment, Everything that follows is fate.
+
+<p class="paragraph ta-justify"><a href="mailto:{{ site.metadata.email }}?subject=Lets work Together" class="button-link" id="action-hire-us">Hire Us</a> to work on your project.</p>
