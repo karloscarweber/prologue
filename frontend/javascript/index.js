@@ -168,3 +168,28 @@ nudge_main = function() {
 if (menubutton != undefined) {
 	menubutton.addEventListener("click", nudge_main, false);
 }
+
+/* Setup swippy swappy thingy */
+const monthlyButton = document.getElementById('choose-monthly')
+const quarterlyButton = document.getElementById('choose-quarterly')
+const monthlyCard = document.getElementById('monthly-card')
+const quarterlyCard = document.getElementById('quarterly-card')
+show_monthly = function() {
+	monthlyButton.classList.remove('inactive');
+	quarterlyButton.classList.add('inactive');
+	monthlyCard.classList.remove('faded');
+	quarterlyCard.classList.add('faded');
+}
+show_quarterly = function() {
+	monthlyButton.classList.add('inactive');
+	quarterlyButton.classList.remove('inactive');
+	monthlyCard.classList.add('faded');
+	quarterlyCard.classList.remove('faded');
+}
+if (monthlyButton != undefined
+	&& quarterlyButton != undefined
+	&& monthlyCard != undefined
+	&& quarterlyCard != undefined) {
+	monthlyButton.addEventListener("click", show_monthly, false);
+	quarterlyButton.addEventListener("click", show_quarterly, false);
+}

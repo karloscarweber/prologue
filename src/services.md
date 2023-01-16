@@ -5,7 +5,7 @@ title: Services
 
 <columns>
 	<column>
-		<h4>iOS Development</h4>
+		<h4>iOS</h4>
 	</column>
 	<column>
 		<p>SwiftUI, UIKit, GRDB, all those fancy animation frameworks.</p>
@@ -14,7 +14,7 @@ title: Services
 
 <columns>
 	<column>
-		<h4>Ruby Development</h4>
+		<h4>Ruby</h4>
 	</column>
 	<column>
 		<p>Camping, Ruby on Rails, Roda, Sinatra, Bridgetown. We love Ruby.</p>
@@ -23,10 +23,10 @@ title: Services
 
 <columns>
 	<column>
-		<h4>Web Development</h4>
+		<h4>Web</h4>
 	</column>
 	<column>
-		<p>HTML, CSS, JavaScript. All the basics at the Vanilla level. Alpine.js, Svelte.js, Stimulus, Sass.</p>
+		<p>HTML, CSS, JavaScript. All the basics at the Vanilla level. Vanilla is a fantastic flavor. Alpine.js, Svelte.js, Stimulus, Sass.</p>
 	</column>
 </columns>
 
