@@ -74,6 +74,12 @@
 	}
 }
 
+@media (max-width: 500px) {
+	.padded-section {
+		padding: 1rem;
+	}
+}
+
 /* New layout for most pages that feature sidebar */
 /* .reg-layout on the body means it's got the sidebar */
 .reg-layout {
