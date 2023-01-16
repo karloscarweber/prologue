@@ -3,6 +3,31 @@
 Prologue Productions website. Everything here should be pretty public so no big deal having it public.
 
 
+For Open Graph Additions:
+
+```html
+<meta property="og:site_name" content="{{ metadata.title }}" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Prologue Productions | An Engineering Studio" />
+<meta property="og:url" content="https://whatspast.com/" />
+<!-- optional image -->
+<meta property="og:image" content="https://whatspast.com/path/to/image.png">
+<!-- for sizing the image -->
+<meta property="og:image:width" content="2400">
+<meta property="og:image:height" content="1374">
+
+<!-- for defining the twitter card to be a summary image thing: -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://whatspast.com/path/to/image.png">
+<!-- for defining the twitter card to just be a summary: -->
+<meta name="twitter:card" content="summary" />
+<!-- Default twitter card stuff -->
+<meta name="twitter:title" content="Prologue Productions | An Engineering Studio" />
+<meta name="twitter:url" content="https://whatspast.com/" />
+<meta name="twitter:site" content="@kowfm" />
+```
+
+
 
 Below is the default bridgetown stuff that comes in the readme.
 

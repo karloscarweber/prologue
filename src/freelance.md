@@ -1,7 +1,7 @@
 ---
-# Feel free to add content and custom Front Matter to this file.
-
 layout: freelance
+twitter_card_type: summary_large_image
+summary_image: images/summary_images/freelancer.png
 ---
 
 <div class="row darkened horsey vertically-padded">

@@ -3,7 +3,22 @@
 {% capture resource_title %}{{ title | strip_html | strip_newlines }}{% endcapture %}
 <title>{% if resource_title != "Index" %}{{ resource_title | escape }} | {{ metadata.title | escape }}{% else %}{{ metadata.title | escape }}: {{ metadata.tagline | escape }}{% endif %}</title>
 
+
 <meta name="description" content="{{ metadata.description }}" />
+
+<meta name="generator" content="Bridgetown" />
+
+<meta property="og:site_name" content="{{ metadata.title }}" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Prologue Productions | An Engineering Studio" />
+<meta property="og:url" content="https://whatspast.com/{{resource.relative_url}}" />
+<meta property="og:image" content="https://whatspast.com/{{ summary_image }}">
+
+<meta name="twitter:card" content="{{ twitter_card_type }}" />
+<meta name="twitter:image" content="https://whatspast.com/{{ summary_image }}">
+<meta name="twitter:title" content="Prologue Productions | An Engineering Studio" />
+<meta name="twitter:url" content="https://whatspast.com/{{resource.relative_url}}" />
+<meta name="twitter:site" content="@kowfm" />
 
 <link rel="stylesheet" href="{% asset_path css %}" />
 {% live_reload_dev_js %}

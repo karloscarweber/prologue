@@ -1,7 +1,7 @@
 ---
 # Feel free to add content and custom Front Matter to this file.
-
 layout: index
+twitter_card_type: summary_large_image
 ---
 
 <div class="row patterned-row thing tall-boy">

@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Posts
+summary_image: place/summary_image.png
 ---
 
 <ul>
