@@ -88,11 +88,12 @@ summary_image: images/summary_images/freelancer.png
 </div>
 
 <div class="row darkened vertically-padded designer-row">
-<section class="really-wide padded-section">
-	<div class="really-wide">
-		<h2 class="full-measure heading-two ta-left">If you're a Designer...</h2>
-		<p class="measure paragraph withered">Making great work means working with the best people. If you're a designer looking for development support we offer special rates. We Really want to build your projects.</p>
-		<p class="measure paragraph"><a class="button-link opposite" href="mailto:{{ metadata.email }}?subject=Lets Collaborate&body=Hi, I'm a designer looking to Collaborate with you." id="action-designer-collaborate">Reach out to Collaborate</a></p>
-	</div>
-</section>
+	<section class="really-wide padded-section" style="overflow:hidden;">
+		<div class="really-wide" style="position:relative;z-index:1000;">
+			<h2 class="full-measure heading-two ta-left">If you're a Designer...</h2>
+			<p class="measure paragraph withered">Making great work means working with the best people. If you're a designer looking for development support we offer special rates. We Really want to build your projects.</p>
+			<p class="measure paragraph"><a class="button-link opposite" href="mailto:{{ metadata.email }}?subject=Lets Collaborate&body=Hi, I'm a designer looking to Collaborate with you." id="action-designer-collaborate">Reach out to Collaborate</a></p>
+		</div>
+	</section>
+<sun></sun>
 </div>

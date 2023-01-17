@@ -246,4 +246,43 @@ footer ul{
 	justify-content: center;
 	gap: 1rem;
 	padding:0;
+	flex-wrap:wrap;
 }
+
+@keyframes rising {
+	from { transform: scale(0.10); }
+	to   { transform: scale(1.0); }
+}
+
+sun {
+	display:block;
+	position:absolute;
+	right: -290px;
+	bottom:-290px;
+	z-index:001;
+	width: 500px;
+	height:500px;
+	background-color: var(--pr-brand-yellow);
+	border-radius:250px;
+	transition: all 0.3s ease-in-out;
+	box-shadow:
+	0 0 50px  00px  var(--pr-brand-yellow),
+	0 0 0   500px  var(--pr-brand-apricot),
+	0 0 50px 500px  var(--pr-brand-apricot),
+	0 0 0   1000px var(--pr-brand-magenta),
+	0 0 50px 1000px var(--pr-brand-magenta),
+	0 0 0   1500px var(--pr-brand-purple),
+	0 0 50px 1500px var(--pr-brand-purple),
+	0 0 0   2000px var(--pr-brand-midnight),
+	0 0 50px 2000px var(--pr-brand-midnight);
+	animation: 90s infinite alternate rising;
+	animation-fill-mode: both;
+}
+/*
+:root {
+	--pr-brand-yellow:   #FFA01E;
+	--pr-brand-apricot:  #FF4678;
+	--pr-brand-magenta:  #EB00AA;
+	--pr-brand-purple:   #A000C8;
+	--pr-brand-midnight: #5A00B4;
+} */
