@@ -59,7 +59,7 @@ main {
 }
 @media (max-width: 960px) {
   .reg-layout main {
-    padding: 2rem;
+    padding: 1rem;
     border-top: 2px solid black;
   }
 }
