@@ -6,7 +6,7 @@ summary_image: images/summary_images/freelancer.png
 
 <div class="row darkened horsey vertically-padded">
 	<p class="flavor-text-1">To fight thine Enemies employ a</p>
-	<img class="knight" src="/images/white-knight.png" />
+	<img class="knight" src="/images/white-knight-min.png" />
 	<p class="flavor-text-2">A sellsword of the highest quality</p>
 	<p class="ostentatious-font ta-center">FREELANCER</p>
 </div>
