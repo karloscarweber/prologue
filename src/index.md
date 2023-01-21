@@ -95,5 +95,5 @@ summary_image: images/summary_images/freelancer.png
 			<p class="measure paragraph"><a class="button-link opposite" href="mailto:{{ site.metadata.email }}?subject=Lets Collaborate&body=Hi, I'm a designer looking to Collaborate with you." id="action-designer-collaborate">Reach out to Collaborate</a></p>
 		</div>
 	</section>
-<sun></sun>
+	<sun></sun>
 </div>
