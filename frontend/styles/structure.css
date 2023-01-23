@@ -54,6 +54,7 @@
 .ta-justify { text-align:justify; }
 
 /* typeface measure */
+.widescreen     { width: 100%; max-width: 100rem; } /* 1600px */
 .really-wide    { width: 100%; max-width: 80.25rem; } /* 1284px - Add an 80px padding here. */
 .full-measure   { width: 100%; max-width: 60rem; } /* 960px */
 .half-measure   { width: 100%; max-width: 30rem; } /* 480px */

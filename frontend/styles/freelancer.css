@@ -206,7 +206,7 @@ main {
 }
 
 .withered { /* for text that is not all there. */
-	opacity: 0.8;
+	opacity: 0.9;
 }
 
 /* Pricing Toggle */
@@ -469,13 +469,15 @@ body.freelance-page > nav, body.freelance-page > header {
 /* Designer Row */
 .designer-row {
 	box-shadow:
-	0 -10px 0 var(--action-color),
+	0 -10px 0 var(--pr-brand-yellow),
 	0 -20px 0 var(--darkened-color),
-	0 -30px 0 var(--action-color),
+	0 -30px 0 var(--pr-brand-apricot),
 	0 -40px 0 var(--darkened-color),
-	0 -50px 0 var(--action-color),
+	0 -50px 0 var(--pr-brand-magenta),
 	0 -60px 0 var(--darkened-color),
-	0 -80px 0 var(--action-color);
+	0 -70px 0 var(--pr-brand-purple),
+	0 -80px 0 var(--darkened-color),
+	0 -100px 0 var(--pr-brand-midnight);
 	margin-top: 16rem;
 	padding-top: 0 !important;
 	position:relative;

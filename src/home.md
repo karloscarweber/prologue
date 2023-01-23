@@ -17,5 +17,3 @@ twitter_card_type: summary_large_image
 		<p class="paragraph ta-justify"><a href="mailto:{{ site.metadata.email }}?subject=Lets work Together" class="button-link" id="action-hire-us">Hire Us</a> to work on your project.</p>
 	</section>
 </div>
-
-

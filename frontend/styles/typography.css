@@ -158,8 +158,8 @@
 	font-family: 'MDSystem', -apple-system, Helvetica, Arial, sans-serif;
 	font-weight: 600;
 	font-size: 1.5rem;
-	line-height: 2rem;
-	letter-spacing:-0.012rem;
+	line-height: 1.5em;
+	/* letter-spacing:-0.012rem; */
 	margin-top: 0em;
 	margin-bottom: 1em;
 	opacity: 0.8;
@@ -168,10 +168,13 @@
 
 .paragraph, p {
 	font-family: 'MDSystem', -apple-system, Helvetica, Arial, sans-serif;
-	font-weight: 600;
-	font-size: 1.5rem;
-	line-height: 2rem;
-	letter-spacing:-0.012rem;
+	/* font-weight: 600; */
+	font-weight: 500;
+	/* font-size: 1.5rem;
+	line-height: 1.5em; */
+	font-size: 2rem;
+	line-height: 1.5em;
+	/* letter-spacing:-0.012rem; */
 	margin-top: 0em;
 	margin-bottom: 1em;
 }
@@ -184,7 +187,7 @@
 	font-style: italic;
 	font-size: 1.75rem;
 	line-height: 2rem;
-	letter-spacing:-0.018rem;
+	/* letter-spacing:-0.018rem; */
 	margin-top: 0em;
 	margin-bottom: 1em;
 }
@@ -217,7 +220,7 @@
 
 /* A content block has markup that's either been output by a wysywig, or is structured with very little special styles */
 .content > h1, .content > h2, .content > h3, .content > h4, .content > p, .content > ul, .content > blockquote, .content > figure {
-	max-width: 60rem;
+	max-width: 80rem;
 }
 /* Define heading widths: */
 .content > h1 { font-size: 5rem; line-height: 1em;}
@@ -229,9 +232,10 @@
 	margin-bottom: 0.75em;
 }
 .content > p {
-	font-size: 1.5rem;
+	font-size: 2rem;
 	line-height:1.5em;
 	font-weight:600;
+	text-align:justify;
 }
 .content > p strong { font-weight:600; }
 .content > p em {font-style: italic;}
@@ -285,13 +289,13 @@
 }
 
 /* Adjusted font-sizes for mobile stuff. */
-@media (max-width: 600px) {
+@media (max-width: 800px) {
 	.heading-one, h1 { font-size: 3rem; }
 	.content > h1 { font-size: 3rem;   }
 	.content > h2 { font-size: 2.5rem; }
 	.content > h3 { font-size: 2rem;   }
 	.content > h4 { font-size: 1.5rem; }
-	.content > p  { font-size: 1rem;}
+	.content > p  { font-size: 1.5rem;}
 	.content > p strong { }
 	.content > p em {}
 	.content > p a {}

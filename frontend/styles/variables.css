@@ -9,7 +9,9 @@
 	--darkened-color: #1B073F;
 	--action-color: #C5F13F;
 	--silver-color: #E7E7E7; /* Old Silver */
-	--silver-color: #FFF4E1;
+	/*--silver-color: #FFF4E1;*/
+	--silver-color: #F5F5F5;
+	--silver-color: #FFF;
 	--stone-color: #B4BCCA;
 
 	--pr-brand-yellow:   #FFA01E;
@@ -29,7 +31,9 @@
 		--darkened-color:color(display-p3 0.106 0.027 0.247 / 1);
 		--action-color: color(display-p3 0.772 0.945 0.247 / 1);
 		--silver-color: color(display-p3 0.905 0.905 0.905 / 1); /* Old silver */
-		--silver-color: color(display-p3 1.000 0.957 0.882 / 1);
+		--silver-color: color(display-p3 0.960 0.960 0.960 / 1); /* Old silver */
+		--silver-color: color(display-p3 1.0 1.0 1.0 / 1); /* Old silver */
+		/*--silver-color: color(display-p3 1.000 0.957 0.882 / 1);*/
 		--stone-color: color(display-p3 0.705 0.737 0.792 / 1);
 
 		--pr-brand-yellow:    color(display-p3 1.00 0.627 0.117 / 1);

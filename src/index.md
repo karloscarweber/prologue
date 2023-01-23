@@ -11,23 +11,22 @@ summary_image: images/summary_images/freelancer.png
 	<p class="ostentatious-font ta-center">FREELANCER</p>
 </div>
 
-<div class="row darkened vertically-padded reaches-top">
-<section class=" really-wide padded-section">
-<div class="full-measure">
-	<h2 class="heading-one ta-left">Prologue Productions is An Engineering Studio</h2>
+<div class="row darkened vertically-padded reaches-top" style="position:relative;z-index:1000; overflow:hidden;" >
+	<section class=" widescreen padded-section">
+		<div class="full-measure" style="position:relative;z-index:1000;" >
+			<h2 class="heading-one ta-left">Prologue Productions is An Engineering Studio</h2>
+			<p class="paragraph withered">Focused on building scalable feature rich applications and websites <strong><em>fast</em></strong>. With a <strong><em>very</em></strong> narrow focus on a select few technologies: <strong>Ruby</strong>, <strong>Swift</strong>, and the vanilla basics of the web: <strong>HTML</strong>, <strong>CSS</strong>, and <strong>JavaScript</strong>.</p>
+		</div>
+		<sun></sun>
+	</section>
 </div>
-<div class="measure">
-	<p class="paragraph withered">Focused on building scalable feature rich applications and websites <strong><em>fast</em></strong>. With a <strong><em>very</em></strong> narrow focus on a select few technologies: <strong>Ruby</strong>, <strong>Swift</strong>, and the vanilla basics of the web: <strong>HTML</strong>, <strong>CSS</strong>, and <strong>JavaScript</strong>.</p>
-</div>
-<!-- <div class="squiggle"></div> -->
-</section>
 
 <div class="row darkened vertically-padded">
-<section class="columned really-wide padded-section">
-	<div class="measure">
+<section class="columned widescreen padded-section">
+	<div class="full-measure">
 		<h2 class="heading-two ta-left">Services</h2>
 	</div>
-	<div class="measure">
+	<div class="full-measure">
 		<h4>iOS Development</h4>
 		<p class="paragraph withered">SwiftUI, UIKit, GRDB, all those fancy animation frameworks.</p>
 		<br>
@@ -37,17 +36,17 @@ summary_image: images/summary_images/freelancer.png
 		<br>
 		<br>
 		<h4>Web Development</h4>
-		<p class="paragraph withered">HTML, CSS, JavaScript. All the basics at the Vanilla level. Alpine.js, Svelte.js, Stimulus, Sass.</p>
+		<p class="paragraph withered">HTML, CSS, JavaScript. All the basics at the Vanilla level. Alpine.js, Svelte.js, Stimulus, Sass, React, Next.js.</p>
 	</div>
 </section>
 </div>
 
 <div class="row darkened vertically-padded">
-<section class="columned really-wide padded-section">
-	<div class="measure">
+<section class="columned widescreen padded-section">
+	<div class="full-measure">
 		<h2 class="heading-two ta-left">Process</h2>
 	</div>
-	<div class="measure">
+	<div class="full-measure">
 		<h4>Gather:</h4>
 		<p class="paragraph withered">Look around, find what fits, investigate, research and collect everything that's pertinent. We hold meetings when we need to, and discover everything possible.</p>
 		<br>
@@ -68,14 +67,14 @@ summary_image: images/summary_images/freelancer.png
 </div>
 
 <div class="row darkened  vertically-padded">
-<section class="columned really-wide padded-section">
-	<div class="measure">
-		<h2 class="heading-two ta-left">Hire Us</h2>
+<section class="columned widescreen padded-section">
+	<div class="full-measure">
+		<h2 class="heading-two ta-left">Book A Call</h2>
 	</div>
-	<div class="measure">
-		<p class="paragraph withered">We only work on a retainer basis. To get started we hold a project assessment, and a little meeting.</p>
-		<p class="paragraph withered">Pause or Cancel at anytime.</p>
-		<p class="paragraph"><a target="_blank" class="button-link" href="https://calendly.com/kowfm/meet-prologue" id="action-book-a-call">Book a Call to see if this is a good fit.</a></p>
+	<div class="full-measure">
+		<p class="paragraph">We only work on a retainer basis. To get started we hold a project assessment, and a little meeting.</p>
+		<p class="paragraph">Pause or Cancel at anytime.</p>
+		<p class="paragraph"><a target="_blank" class="button-link opposite" href="https://calendly.com/kowfm/meet-prologue" id="action-book-a-call">Schedule a meeting</a> to see if this is a good fit</p>
 		<p>Or... Just buy a subscription below</p>
 	</div>
 </section>
@@ -91,9 +90,8 @@ summary_image: images/summary_images/freelancer.png
 	<section class="really-wide padded-section" style="overflow:hidden;">
 		<div class="really-wide" style="position:relative;z-index:1000;">
 			<h2 class="full-measure heading-two ta-left">If you're a Designer...</h2>
-			<p class="measure paragraph withered">Making great work means working with the best people. If you're a designer looking for development support we offer special rates. We Really want to build your projects.</p>
-			<p class="measure paragraph"><a class="button-link opposite" href="mailto:{{ site.metadata.email }}?subject=Lets Collaborate&body=Hi, I'm a designer looking to Collaborate with you." id="action-designer-collaborate">Reach out to Collaborate</a></p>
+			<p class="full-measure paragraph withered">Making great work means working with the best people. If you're a designer looking for development support we offer special rates. We Really want to build your projects.</p>
+			<p class="full-measure paragraph"><a class="button-link opposite" href="mailto:{{ site.metadata.email }}?subject=Lets Collaborate&body=Hi, I'm a designer looking to Collaborate with you." id="action-designer-collaborate">Reach out to Collaborate</a></p>
 		</div>
 	</section>
-	<sun></sun>
 </div>
