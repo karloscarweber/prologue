@@ -98,7 +98,7 @@ summary_image: images/summary_images/freelancer.png
 		<div class="really-wide" style="position:relative;z-index:1000;">
 			<h2 class="full-measure heading-two ta-left">If you're a Designer...</h2>
 			<p class="full-measure paragraph withered">Making great work means working with the best people. If you're a designer looking for development support we offer special rates. We Really want to build your projects.</p>
-			<p class="full-measure paragraph"><a class="button-link opposite" href="mailto:{{ site.metadata.email }}?subject=Lets Collaborate&body=Hi, I'm a designer looking to Collaborate with you." id="action-designer-collaborate">Reach out to Collaborate</a></p>
+			<p class="full-measure paragraph"><a class="button-link pinked" href="mailto:{{ site.metadata.email }}?subject=Lets Collaborate&body=Hi, I'm a designer looking to Collaborate with you." id="action-designer-collaborate">Reach out to Collaborate</a></p>
 		</div>
 	</section>
 </div>

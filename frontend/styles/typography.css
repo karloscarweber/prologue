@@ -336,3 +336,12 @@
 	color:white;
 	background:var(--darkened-color);
 }
+
+.button-link.pinked {
+	color:white;
+	background:var(--pr-brand-magenta);
+}
+.button-link.pinked:hover {
+	color:var(--pr-brand-magenta);
+	background:none;
+}

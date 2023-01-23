@@ -15,7 +15,9 @@ body {
   line-height: 1.5;
 }
 body.reg-layout {
-  background: var(--silver-color);
+  /* background: var(--silver-color); */
+  background: #FFF9EE;
+  /* background: white; */
   color: black;
 }
 
