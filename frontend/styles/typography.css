@@ -315,19 +315,24 @@
 	margin-right: -0.35rem;
 }
 .button-link:hover {
-	color:black;
-	background:var(--action-color);
+	color:var(--darkened-color);
+	background:var(--pr-brand-yellow);
 }
 
 .button-link.opposite {
-	padding: 0.10rem 0.35rem;
-	margin-left: -0.35rem;
-	text-decoration: none;
-	margin-right: -0.35rem;
-	color:black;
-	background:var(--action-color);
+	color:var(--darkened-color);
+	background:var(--pr-brand-yellow);
 }
 .button-link.opposite:hover {
-	color:var(--action-color);
-	background:black;
+	color:var(--pr-brand-yellow);
+	background:var(--darkened-color);
+}
+
+.button-link.white {
+	color:var(--darkened-color);
+	background:white;
+}
+.button-link.white:hover {
+	color:white;
+	background:var(--darkened-color);
 }

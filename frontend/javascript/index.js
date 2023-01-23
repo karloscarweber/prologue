@@ -193,3 +193,16 @@ if (monthlyButton != undefined
 	monthlyButton.addEventListener("click", show_monthly, false);
 	quarterlyButton.addEventListener("click", show_quarterly, false);
 }
+
+/* Setup sun rise */
+sun = document.getElementById("sun");
+let sunWidth = 1300; // represents the sun's Actual width
+sunrise = function() {
+	sun.style.transform = "scale("+(window.innerWidth / sunWidth)+")";
+}
+if (sun != undefined) {
+	sunrise();
+	window.addEventListener('resize', function(event) {
+		sunrise()
+	}, true);
+}
