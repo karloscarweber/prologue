@@ -286,8 +286,6 @@ sun corona.three {background-color: var(--pr-brand-magenta);transform:scale(3.0)
 sun corona.four  {background-color: var(--pr-brand-purple);transform:scale(4.0);}
 sun corona.five  {background-color: var(--pr-brand-midnight);transform:scale(5.0);}
 
-
-
 /* sun:after {
 	content:"";
 	display:block;
