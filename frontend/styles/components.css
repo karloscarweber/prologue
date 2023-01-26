@@ -345,9 +345,14 @@ sun:after:after {
 	padding: 3rem 7rem;
 
 	background: var(--pr-brand-midnight);
-	box-shadow: 0 8px 57px 11px rgba(90,0,180,0.62);
+	/* box-shadow: 0 8px 57px 11px rgba(90,0,180,0.00); */
 	border-radius: 55px;
+	transition: box-shadow 1s ease-in-out;
 }
+
+/* .services-container.active .services-box {
+	box-shadow: 0 8px 57px 11px rgba(90,0,180,0.42);
+} */
 
 .services-box *:last-child { margin-bottom: 0rem;}
 
@@ -363,10 +368,7 @@ sun:after:after {
 	top: 50%;
 	margin-top: -66px;
 	transform: translateY(0rem) translateX(0rem) rotate(0deg);
-	/* Animation stuff */
-	/* transition:2.3s cubic-bezier(0.33, 50, 2.85, -50); */
-	/* transition: 0.2s cubic-bezier(0.5,200,0.5,-200); */
-	transition: transform 0.73s cubic-bezier(0.87, 0, 0.13, 1), opacity 0.3s ease-in-out;
+	transition: transform 0.73s cubic-bezier(0.87, 0, 0.13, 1);
 	transition-delay: 0.1s;
 
 }
@@ -389,6 +391,31 @@ sun:after:after {
 	transition-delay: 0.45s;
 }
 
+@media (max-width: 800px) {
+	.services-box {
+		max-width:calc(100vw - 14rem);
+		padding:3rem 5rem;
+		margin:0 auto;
+	}
+	/* .service-icon {z-index:2000;} */
+	.services-container.active .service-icon#iphone {transform:translateY(-12rem) translateX(-10rem) rotate(-9deg);}
+	.services-container.active .service-icon#ruby {transform:translateY(0rem) translateX(-17rem);}
+	.services-container.active .service-icon#abstract {transform:translateY(11rem) translateX(-13rem);}
+	.services-container.active .service-icon#javascript {transform:translateY(-12rem) translateX(15rem) rotate(7deg);}
+	.services-container.active .service-icon#prologue {transform:translateY(4rem) translateX(16rem);}
+	.services-container.active .service-icon#swift {transform:translateY(13rem) translateX(11rem) rotate(-12deg);}
+}
+
+@media (max-width: 650px) {
+	.services-box {
+		padding: 3rem 6rem;
+		background-color: color(display-p3 0.353 0.00 0.706 / 0.7);
+		max-width:100%;
+	}
+
+}
+
+
 #ruby #icon-ruby #ruby-shape { fill: var(--deep-red); }
 #icon-swift #icon-shape #swift-background { fill: var(--swift-orange); }
 #icon-javascript #javascript-shape { fill: var(--js-yellow); }
@@ -399,29 +426,56 @@ sun:after:after {
 #icon-prologue #fifth   { fill: var(--pr-brand-yellow); }
 
 
-@keyframes rollIn {
-	from,
-	20%,
-	40%,
-	60%,
-	80%,
-	to  { animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);}
+/* ordinaled text that animates when exposed to sunlight. */
+#measured { overflow: hidden; }
+.ordinaled {
+	margin:5rem;
+	transition: all 1s ease-in-out;
+	transition-delay: 0.1s;
+	transform: translateX(0rem);
+	opacity:0.0;
+}
+.ordinaled span.ordinal {
+	display:inline-block;
+	width:2rem;
+	height: 2rem;
+	margin-right:1.25rem;
+	border-radius:1rem;
+}
+.ordinaled span.ordinal.purple  { background: var(--pr-brand-purple) ;}
+.ordinaled span.ordinal.magenta { background: var(--pr-brand-magenta);}
+.ordinaled span.ordinal.apricot { background: var(--pr-brand-apricot);}
+.ordinaled span.ordinal.yellow  { background: var(--pr-brand-yellow) ;}
 
-	0%  { transform:translateY(  0rem) translateX( 0rem) rotate( 0deg); }
-	20% { transform:translateY( -2rem) translateX(-12rem) rotate( 0deg); }
-	40% { transform:translateY( -4rem) translateX(-13rem) rotate(-0deg); }
-	60% { transform:translateY( -6rem) translateX(-17rem) rotate(-2deg); }
-	80% { transform:translateY( -8rem) translateX(-20rem) rotate(-8deg); }
-	to  { transform:translateY(-12rem) translateX(-25rem) rotate(-9deg); }
+.ordinaled.purple { transform: translateX(-5rem);}
+.ordinaled.magenta { transform: translateX(0rem);}
+.ordinaled.apricot { transform: translateX(5rem);}
+.ordinaled.yellow { transform: translateX(10rem);}
+#measured.visible .ordinaled.purple  { transform: translateX(0rem);transition-delay: 0.1s; opacity:1.0;}
+#measured.visible .ordinaled.magenta { transform: translateX(5rem);transition-delay: 0.2s; opacity:1.0;}
+#measured.visible .ordinaled.apricot { transform: translateX(10rem);transition-delay: 0.3s; opacity:1.0;}
+#measured.visible .ordinaled.yellow  { transform: translateX(15rem);transition-delay:0.4s; opacity:1.0;}
+
+@media (max-width: 1200px) {
+	.ordinaled {margin-left:3rem;margin-right:3rem;}
+}
+@media (max-width: 1050px) {
+	#measured.visible .ordinaled.purple  { transform: translateX(0rem);}
+	#measured.visible .ordinaled.magenta { transform: translateX(3rem);}
+	#measured.visible .ordinaled.apricot { transform: translateX(6rem);}
+	#measured.visible .ordinaled.yellow  { transform: translateX(9rem);}
+}
+@media (max-width: 900px) {
+	#measured.visible .ordinaled.purple,
+	#measured.visible .ordinaled.magenta,
+	#measured.visible .ordinaled.apricot,
+	#measured.visible .ordinaled.yellow { transform: translateX(0rem);}
 }
 
-.rollIn {
-	animation-fill-mode: forwards;
-	animation-duration: 1.3s;
-	animation-name: rollIn;
+.visible-on-mobile {display:none;}
+.hidden-on-mobile {display:block;}
+@media (max-width: 650px) {
+	.visible-on-mobile {display:block;}
+	.hidden-on-mobile {display:none;}
 }
-/* .services-container.active .service-icon#iphone {
-	animation-fill-mode: forwards;
-	animation-duration: 1.3s;
-	animation-name: rollIn;
-} */
+

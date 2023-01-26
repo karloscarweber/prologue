@@ -4,12 +4,12 @@ twitter_card_type: summary_large_image
 summary_image: images/summary_images/freelancer.png
 ---
 
-<div class="row darkened horsey vertically-padded">
+<!-- <div class="row darkened horsey vertically-padded">
 	<p class="flavor-text-1">To fight thine Enemies employ a</p>
 	<img class="knight" src="/images/white-knight-min.png" />
 	<p class="flavor-text-2">A sellsword of the highest quality</p>
 	<p class="ostentatious-font ta-center">FREELANCER</p>
-</div>
+</div> -->
 
 <div class="row darkened vertically-padded reaches-top" style="box-sizing:border-box;min-height:100vh;position:relative;z-index:1000; overflow:hidden;" >
 	<section class=" widescreen padded-section">
@@ -29,10 +29,10 @@ summary_image: images/summary_images/freelancer.png
 </div>
 
 
-<div class="row darkened vertically-padded">
+<div class="row darkened" style="padding-top:25vh;padding-bottom:25vh;">
 <section class="widescreen padded-section">
 		<h2 class="heading-two ta-center">Services</h2>
-	<div class="services-container active">
+	<div class="services-container" id="services_box">
 		{% render "icons/abstract" %}
 		{% render "icons/iphone" %}
 		{% render "icons/javascript" %}
@@ -54,23 +54,17 @@ summary_image: images/summary_images/freelancer.png
 <section class="columned widescreen padded-section">
 	<div class="full-measure">
 		<h2 class="heading-two ta-left">Process</h2>
+		<p class="paragraph withered">It's important to note that all of this nonsense is made up. All of society is designed and built by regular people. Nobody is really special. So what is special?</p>
+		<p class="paragraph withered">When you spend more time and care on something than anybody else, You make something special. It's the process of iteration, step by step, change over time, following your gut, that makes something truly unique and remarkable.</p>
+		<p class="paragraph withered">Our process is to make small bets quickly, then double down on what's working. Repeat until we run out of time or budget. This always works out.</p>
 	</div>
-	<div class="full-measure">
-		<h4>Gather:</h4>
-		<p class="paragraph withered">Look around, find what fits, investigate, research and collect everything that's pertinent. We hold meetings when we need to, and discover everything possible.</p>
-		<br>
-		<h4>Experiment:</h4>
-		<p class="paragraph withered">Take what We've found and make some tests and figure out how things will work. Will this design direction work? does it make sense? Try it out a bit. Will this be good? Ok... make a plan to execute and deliver. Try some random stuff from our research. The important thing is that this is <strong>the decision point</strong>. Our Experiments determine our Plan.</p>
-		<br>
-		<h4>Draft ∞:</h4>
-		<p class="paragraph withered">Whether it's code or design, build a first complete draft, then take a step back and ask for feedback. Keep drafting and receiving feedback until we have something that works, That we like, Or we run out of time.</p>
-		<br>
-		<h4>Deliver:</h4>
-		<p class="paragraph withered">Now that our thing is complete, we send it off. We button it up and deliver it. </p>
-		<br>
-		<br>
-		<h3>Tick Tock</h3>
-		<p class="paragraph withered">We alternate our work cycles between Building and Refactoring/Fixing. The longer we have with a project the more context there is for us to make the right decisions. We need to have the opportunity to continually improve the project to keep it's momentum going.</p>
+	<div class="full-measure" id="measured">
+		<!-- <h2 class="heading-two ta-left hidden-on-mobile">Process</h2> -->
+		<br /><br /><br />
+		<h4 class="ordinaled purple withered"><span class="ordinal purple"></span> Gather</h4>
+		<h4 class="ordinaled magenta withered"><span class="ordinal magenta"></span> Experiment</h4>
+		<h4 class="ordinaled apricot withered"><span class="ordinal apricot"></span> Draft</h4>
+		<h4 class="ordinaled yellow withered"><span class="ordinal yellow"></span> Deliver</h4>
 	</div>
 </section>
 </div>

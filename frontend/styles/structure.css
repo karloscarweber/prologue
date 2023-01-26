@@ -47,6 +47,18 @@
 	}
 }
 
+.reverse-columned {
+	display:flex;
+	flex-direction: row-reverse;
+	align-items: flex-start;
+	justify-content: space-between;
+}
+@media (max-width: 900px) {
+	.reverse-columned {
+		flex-direction: column;
+	}
+}
+
 /* Text-alignment and stuff */
 .ta-left { text-align:left; }
 .ta-right { text-align:right; }
