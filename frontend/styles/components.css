@@ -317,3 +317,111 @@ sun:after:after {
 	--pr-brand-purple:   #A000C8;
 	--pr-brand-midnight: #5A00B4;
 } */
+
+.services-container {
+	width:auto;
+	height:auto;
+	display:block;
+	position:relative;
+	z-index:1000;
+	margin-top:4rem;
+	margin-bottom:4rem;
+	margin-left:auto;
+	margin-right:auto;
+	width:100%;
+	max-width: 768px;
+	min-height:350px;
+}
+
+.services-box {
+	width:100%;
+	max-width: 768px;
+	min-height:350px;
+	height:auto;
+	display:block;
+	position:relative;
+	z-index:1000;
+	box-sizing:border-box;
+	padding: 3rem 7rem;
+
+	background: var(--pr-brand-midnight);
+	box-shadow: 0 8px 57px 11px rgba(90,0,180,0.62);
+	border-radius: 55px;
+}
+
+.services-box *:last-child { margin-bottom: 0rem;}
+
+.service-icon {
+	display:block;
+	position:absolute;
+	z-index:100;
+	pointer-events: none;
+	width:132px;
+	height:132px;
+	left: 50%;
+	margin-left: -66px;
+	top: 50%;
+	margin-top: -66px;
+	transform: translateY(0rem) translateX(0rem) rotate(0deg);
+	/* Animation stuff */
+	/* transition:2.3s cubic-bezier(0.33, 50, 2.85, -50); */
+	/* transition: 0.2s cubic-bezier(0.5,200,0.5,-200); */
+	transition: transform 0.73s cubic-bezier(0.87, 0, 0.13, 1), opacity 0.3s ease-in-out;
+	transition-delay: 0.1s;
+
+}
+.services-container.active .service-icon#iphone {transform:translateY(-12rem) translateX(-25rem) rotate(-9deg);
+	transition-delay: 0.1s;
+}
+.services-container.active .service-icon#ruby {transform:translateY(0rem) translateX(-32rem);
+	transition-delay: 0.2s;
+}
+.services-container.active .service-icon#abstract {transform:translateY(12rem) translateX(-25rem);
+	transition-delay: 0.3s;
+}
+.services-container.active .service-icon#javascript {transform:translateY(-12rem) translateX(30rem) rotate(7deg);
+	transition-delay: 0.35s;
+}
+.services-container.active .service-icon#prologue {transform:translateY(5rem) translateX(30rem);
+	transition-delay: 0.2s;
+}
+.services-container.active .service-icon#swift {transform:translateY(16rem) translateX(21rem) rotate(-12deg);
+	transition-delay: 0.45s;
+}
+
+#ruby #icon-ruby #ruby-shape { fill: var(--deep-red); }
+#icon-swift #icon-shape #swift-background { fill: var(--swift-orange); }
+#icon-javascript #javascript-shape { fill: var(--js-yellow); }
+#icon-prologue #first   { fill: var(--pr-brand-midnight); }
+#icon-prologue #second  { fill: var(--pr-brand-purple); }
+#icon-prologue #third   { fill: var(--pr-brand-magenta); }
+#icon-prologue #fourth  { fill: var(--pr-brand-apricot); }
+#icon-prologue #fifth   { fill: var(--pr-brand-yellow); }
+
+
+@keyframes rollIn {
+	from,
+	20%,
+	40%,
+	60%,
+	80%,
+	to  { animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);}
+
+	0%  { transform:translateY(  0rem) translateX( 0rem) rotate( 0deg); }
+	20% { transform:translateY( -2rem) translateX(-12rem) rotate( 0deg); }
+	40% { transform:translateY( -4rem) translateX(-13rem) rotate(-0deg); }
+	60% { transform:translateY( -6rem) translateX(-17rem) rotate(-2deg); }
+	80% { transform:translateY( -8rem) translateX(-20rem) rotate(-8deg); }
+	to  { transform:translateY(-12rem) translateX(-25rem) rotate(-9deg); }
+}
+
+.rollIn {
+	animation-fill-mode: forwards;
+	animation-duration: 1.3s;
+	animation-name: rollIn;
+}
+/* .services-container.active .service-icon#iphone {
+	animation-fill-mode: forwards;
+	animation-duration: 1.3s;
+	animation-name: rollIn;
+} */

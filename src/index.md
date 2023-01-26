@@ -28,22 +28,24 @@ summary_image: images/summary_images/freelancer.png
 	</section>
 </div>
 
+
 <div class="row darkened vertically-padded">
-<section class="columned widescreen padded-section">
-	<div class="full-measure">
-		<h2 class="heading-two ta-left">Services</h2>
-	</div>
-	<div class="full-measure">
-		<h4>iOS Development</h4>
-		<p class="paragraph withered">SwiftUI, UIKit, GRDB, all those fancy animation frameworks.</p>
-		<br>
-		<br>
-		<h4>Ruby Development</h4>
-		<p class="paragraph withered">Camping, Ruby on Rails, Roda, Sinatra, Bridgetown. We love Ruby.</p>
-		<br>
-		<br>
-		<h4>Web Development</h4>
-		<p class="paragraph withered">HTML, CSS, JavaScript. All the basics at the Vanilla level. Alpine.js, Svelte.js, Stimulus, Sass, React, Next.js.</p>
+<section class="widescreen padded-section">
+		<h2 class="heading-two ta-center">Services</h2>
+	<div class="services-container active">
+		{% render "icons/abstract" %}
+		{% render "icons/iphone" %}
+		{% render "icons/javascript" %}
+		{% render "icons/prologue" %}
+		{% render "icons/ruby" %}
+		{% render "icons/swift" %}
+		<div class="services-box">
+			<p class="interface-text">iOS and Mac Development</p>
+			<p class="interface-text">Ruby, Camping, Rails</p>
+			<p class="interface-text">Front End Development</p>
+			<p class="interface-text">Web Design</p>
+			<p class="interface-text">Ghost</p>
+		</div>
 	</div>
 </section>
 </div>
