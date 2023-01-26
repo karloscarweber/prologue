@@ -83,8 +83,11 @@ summary_image: images/summary_images/freelancer.png
 </section>
 </div>
 
-<div class="row darkened">
+<div class="row darkened vertically-padded really-dark" style="padding-bottom:30vh;padding-top:30vh;">
 <section class="really-wide padded-section">
+	<div>
+		<h2 class="heading-two ta-center" style="margin-bottom:4rem">Simple Pricing</h2>
+	</div>
 	{% render "pricing" %}
 </section>
 </div>

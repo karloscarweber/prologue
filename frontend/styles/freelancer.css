@@ -223,6 +223,11 @@ main {
 	border-radius:20px;
 	padding: 10px;
 	box-sizing: border-box;
+	position:absolute;
+	left:50%;
+	bottom:0%;
+	margin-left:-10rem;
+	margin-bottom:-8rem;
 }
 
 .pricing-toggle-container .toggle {
@@ -265,20 +270,20 @@ main {
 .swapper {
 	display:flex;
 	position:relative;
-	width:340px;
-	height:500px;
-	overflow:hidden;
+	width:28rem;
+	height:auto;
+	/* overflow:hidden; */
 	gap: 1rem;
 }
 .price-card {
 	width: 100%;
-	max-width:340px;
+	max-width:28rem;
 	height:auto;
 	min-height:500px;
 	box-sizing:border-box;
-	padding:2.5rem;
+	padding:5rem 3rem 2rem;
 	border-radius:2.5rem;
-	background-color: var(--stone-color);
+	background-color: var(--pr-brand-midnight);
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
@@ -296,10 +301,10 @@ main {
 	opacity:0;
 	pointer-events: none;
 } */
-.swapper .price-card:first-child { margin-right:-170px; }
-.swapper .price-card:last-child { margin-left:-170px; }
+/* .swapper .price-card:first-child { margin-right:-170px; }
+.swapper .price-card:last-child { margin-left:-170px; } */
 
-.swapper .price-card.faded:first-child {
+/* .swapper .price-card.faded:first-child {
 	transform: translateX(-5rem);
 	opacity:0;
 	pointer-events: none;
@@ -308,12 +313,11 @@ main {
 	transform: translateX(5rem);
 	opacity:0;
 	pointer-events: none;
-}
+} */
 
 .price-card h2, .price-card p {
-	color: black;
-	color: var(--silver-color);
-	font-size:1.25rem;
+	color: var(--off-white-cream-color);
+	font-size:1.5rem;
 }
 .price-card h2 {
 	font-size:3rem;
@@ -322,21 +326,21 @@ main {
 .price-card p.price {
 	font-family: 'ManifoldCF', 'MDPrimer', -apple-system, Helvetica, Arial, sans-serif;
 	font-weight: 800;
-	font-size: 3rem;
-	line-height: 3rem;
+	font-size: 4.5rem;
+	line-height: 4.5rem;
 	text-align:center;
 	margin-bottom:0;
 }
 .price-card p.price span {
-	font-size: 1rem;
+	font-size: 1.5rem;
 	font-weight: 500;
 }
 .price-card p.price-subtext {
-	font-size: 1rem;
-	line-height: 1rem;
+	font-size: 2rem;
+	line-height: 3rem;
 	text-align: center;
-	opacity: 0.7;
-	margin-top:-0.25rem;
+	/* margin-top:-1rem; */
+	font-weight:400;
 }
 .price-card .chin {
 	display: flex;
@@ -352,10 +356,10 @@ main {
 	padding-right: 0.5rem;
 }
 .price-card .button {
-	display:block;
+	/* display:block; */
 	margin: 4rem auto;
 	text-align: center;
-	color:black;
+	color: var(--off-white-cream-color);
 	font-weight: 500;
 	/* font-size: 1.125rem; */
 	font-size: 2rem;
@@ -374,16 +378,22 @@ main {
 
 /* price card info */
 .price-card.outlined {
-	background:transparent;
-	border: solid 3px #8D9197;
-	color: var(--silver-color);
+	background: transparent;
+	border: solid 4px var(--off-white-cream-color);
+	color: var(--off-white-cream-color);
+	padding: 3rem 2.25rem;
 }
+@media (max-width: 1134px) { .price-card.outlined {margin-top: 7rem; } }
+
 body.reg-layout .price-card.outlined {
 		border: solid 3px black;
 		color: black;
 }
 
-.price-card.outlined p, .price-card.outlined h3 { color: var(--silver-color); }
+.price-card.outlined p, .price-card.outlined h3 {
+	color: var(--off-white-cream-color);
+	opacity:0.8;
+}
 body.reg-layout .price-card.outlined p, body.reg-layout .price-card.outlined h3 { color: black; }
 .price-card.outlined h3 {
 	font-size: 2rem;
@@ -391,8 +401,9 @@ body.reg-layout .price-card.outlined p, body.reg-layout .price-card.outlined h3 
 	font-family: 'MDPrimer', -apple-system, Helvetica, Arial, sans-serif;
 }
 .price-card.outlined p {
-	font-size: 1rem;
+	font-size: 1.5rem;
 	line-height:1.5em;
+	font-weight: 400;
 	font-family: 'MDSystem', -apple-system, Helvetica, Arial, sans-serif;
 }
 
@@ -478,8 +489,10 @@ body.freelance-page > nav, body.freelance-page > header {
 	0 -70px 0 var(--pr-brand-purple),
 	0 -80px 0 var(--darkened-color),
 	0 -100px 0 var(--pr-brand-midnight);
-	margin-top: 16rem;
+	/* margin-top: 16rem; */
 	padding-top: 0 !important;
 	position:relative;
 	overflow:hidden;
 }
+
+.hidden {display:none;}

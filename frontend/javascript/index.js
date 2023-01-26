@@ -169,27 +169,39 @@ if (menubutton != undefined) {
 	menubutton.addEventListener("click", nudge_main, false);
 }
 
+
+let price_message_monthly = "<strong>50</strong> hours of hyper focus on your projects each month.<br>iOS, Ruby, or Web."
+let price_message_quarterly = "<strong>50</strong> hours of hyper focus on your projects each month.<br> iOS, Ruby, or Web.<br><strong>$1000 per month savings</strong>"
+let price_title_monthly = "$7,499/<span>month</span>"
+let price_title_quarterly = "$6,499/<span>month</span>"
+
 /* Setup swippy swappy thingy */
 const monthlyButton = document.getElementById('choose-monthly')
 const quarterlyButton = document.getElementById('choose-quarterly')
-const monthlyCard = document.getElementById('monthly-card')
-const quarterlyCard = document.getElementById('quarterly-card')
+const priceText = document.getElementById('price-text')
+const priceMessage = document.getElementById('pricing-message')
 show_monthly = function() {
 	monthlyButton.classList.remove('inactive');
 	quarterlyButton.classList.add('inactive');
-	monthlyCard.classList.remove('faded');
-	quarterlyCard.classList.add('faded');
+	priceText.innerHTML = price_title_monthly;
+	priceMessage.innerHTML = price_message_monthly;
+	buyRetainerMonthly.classList.remove('hidden');
+	buyRetainerQuarterly.classList.add('hidden');
 }
 show_quarterly = function() {
 	monthlyButton.classList.add('inactive');
 	quarterlyButton.classList.remove('inactive');
-	monthlyCard.classList.add('faded');
-	quarterlyCard.classList.remove('faded');
+	priceText.innerHTML = price_title_quarterly;
+	priceMessage.innerHTML = price_message_quarterly;
+	buyRetainerMonthly.classList.add('hidden');
+	buyRetainerQuarterly.classList.remove('hidden');
 }
 if (monthlyButton != undefined
 	&& quarterlyButton != undefined
-	&& monthlyCard != undefined
-	&& quarterlyCard != undefined) {
+	&& priceText != undefined
+	&& buyRetainerMonthly != undefined
+	&& priceMessage != undefined
+	&& buyRetainerQuarterly != undefined) {
 	monthlyButton.addEventListener("click", show_monthly, false);
 	quarterlyButton.addEventListener("click", show_quarterly, false);
 }
@@ -225,7 +237,6 @@ if (services_box != undefined) {
 	let observer = new IntersectionObserver(services_reveal, {threshold: 0.25});
 	observer.observe(services_box)
 }
-
 
 /* Interaction observer for the bullet points stuff */
 measured_process = document.getElementById('measured');
