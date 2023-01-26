@@ -1,7 +1,7 @@
 ---
 layout: freelance
 twitter_card_type: summary_large_image
-summary_image: images/summary_images/freelancer.png
+summary_image: images/summary_images/prologue_1.png
 ---
 
 <!-- <div class="row darkened horsey vertically-padded">
