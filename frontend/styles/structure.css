@@ -89,6 +89,8 @@
 @media (max-width: 500px) {
 	.padded-section {
 		padding: 1rem;
+		max-width:100vw;
+		overflow:hidden;
 	}
 }
 
