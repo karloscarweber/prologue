@@ -281,7 +281,7 @@ main {
 	height:auto;
 	min-height:500px;
 	box-sizing:border-box;
-	padding:5rem 3rem 2rem;
+	padding:4rem 3rem 2rem;
 	border-radius:2.5rem;
 	background-color: var(--pr-brand-midnight);
 	display: flex;

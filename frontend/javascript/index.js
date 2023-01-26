@@ -170,8 +170,8 @@ if (menubutton != undefined) {
 }
 
 
-let price_message_monthly = "<strong>50</strong> hours of hyper focus on your projects each month.<br>iOS, Ruby, or Web."
-let price_message_quarterly = "<strong>50</strong> hours of hyper focus on your projects each month.<br> iOS, Ruby, or Web.<br><strong>$1000 per month savings</strong>"
+let price_message_monthly = "<strong>50</strong> hours dedicated to your projects monthly.<br>iOS, Ruby, and Web."
+let price_message_quarterly = "<strong>50</strong> hours dedicated to your projects monthly.<br> iOS, Ruby, and Web.<br>Interface Design.<br><strong>$1000 per month savings</strong>"
 let price_title_monthly = "$7,499/<span>month</span>"
 let price_title_quarterly = "$6,499/<span>month</span>"
 
