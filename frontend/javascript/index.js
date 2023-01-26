@@ -251,6 +251,6 @@ let points_reveal = (entries, observer) => {
 }
 /* active */
 if (measured_process != undefined) {
-	let observer = new IntersectionObserver(points_reveal, {threshold: 0.25});
+	let observer = new IntersectionObserver(points_reveal, {threshold: 0.75});
 	observer.observe(measured_process)
 }
