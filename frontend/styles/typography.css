@@ -357,3 +357,11 @@
 	color:var(--pr-brand-magenta);
 	background:none;
 }
+
+
+/* generic type adjustments across sizes */
+@media (max-width: 650px) {
+	.paragraph, p {
+		font-size:1.5rem;
+	}
+}
