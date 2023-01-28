@@ -368,3 +368,43 @@
 
 	}
 }
+
+
+/* Typeface Scale that I'm gonna use for Rocketry */
+/* @link https://utopia.fyi/type/calculator?c=320,16,1.2,1680,20,1.25,5,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
+
+/* Type Sizes, use in font-size, example: font-size: var(--step-0); */
+:root {
+	--step--2: clamp(0.69rem, calc(0.67rem + 0.12vw), 0.80rem);
+	--step--1: clamp(0.83rem, calc(0.79rem + 0.20vw), 1.00rem);
+	--step-0: clamp(1.00rem, calc(0.94rem + 0.29vw), 1.25rem);
+	--step-1: clamp(1.20rem, calc(1.11rem + 0.43vw), 1.56rem);
+	--step-2: clamp(1.44rem, calc(1.32rem + 0.60vw), 1.95rem);
+	--step-3: clamp(1.73rem, calc(1.56rem + 0.84vw), 2.44rem);
+	--step-4: clamp(2.07rem, calc(1.84rem + 1.15vw), 3.05rem);
+	--step-5: clamp(2.49rem, calc(2.18rem + 1.56vw), 3.82rem);
+}
+
+/* LineHeight pairings, use in line-height, example: line-height: var(--lh-step-0); */
+:root {
+	--lh-step--2: 1.75;
+	--lh-step--1: 1.75;
+	--lh-step-0:  1.7;
+	--lh-step-1:  1.5;
+	--lh-step-2:  1.333;
+	--lh-step-3:  1.25;
+	--lh-step-4:  1.2;
+	--lh-step-5:  1.2;
+}
+
+/*  Type size pairings, use in font, example: font: var(--font-0); */
+:root {
+	--font--2: 500 var(--step--2) /  var(--lh-step--2) 1.7 sans-serif;
+	--font--1: 500 var(--step--1) /  var(--lh-step--1) 1.7 sans-serif;
+	--font-0:  500 var(--step-0)  /  var(--lh-step-0)  1.7 sans-serif;
+	--font-1:  500 var(--step-1)  /  var(--lh-step-1)  1.7 sans-serif;
+	--font-2:  500 var(--step-2)  /  var(--lh-step-2)  1.7 sans-serif;
+	--font-3:  500 var(--step-3)  /  var(--lh-step-3)  1.7 sans-serif;
+	--font-4:  500 var(--step-4)  /  var(--lh-step-4)  1.7 sans-serif;
+	--font-5:  500 var(--step-5)  /  var(--lh-step-5)  1.7 sans-serif;
+}
