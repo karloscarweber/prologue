@@ -86,7 +86,7 @@ summary_image: images/summary_images/prologue_1.png
 <div class="row darkened vertically-padded really-dark" style="padding-bottom:30vh;padding-top:30vh;">
 <section class="really-wide padded-section">
 	<div>
-		<h2 class="heading-two ta-center" style="margin-bottom:4rem">Simple Pricing</h2>
+		<h2 id="pricing" class="heading-two ta-center" style="margin-bottom:4rem">Simple Pricing</h2>
 	</div>
 	{% render "pricing" %}
 </section>
