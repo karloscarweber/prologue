@@ -47,3 +47,14 @@ This year I'll complete a handful of new plugins to improve Camping, modernize i
 
 <p class="full-measure paragraph"><a class="button-link opposite" href="https://github.com/camping/camping/blob/master/lib/camping.rb" target="_blank">The famous minified code</a></p>
 
+## Sparkage
+
+I was contracted a couple of years ago to make a website for a local startup, it took me a couple of weeks. I built the whole thing out in Tachyons, with some custom CSS, plus a home grown javascript library to add parallax animation to some elements.
+
+<p class="full-measure paragraph"><a class="button-link opposite" href="https://getsparkage.com" target="_blank">See Sparkage</a></p>
+
+## Make 100 Things
+
+This is an unreleased site that I designed and built, but didn't spread widely. The idea was to monetize small creative output over a long period of time. I abandoned the monetization idea soon after building it, but I really like the idea of showing continual progress over time in a narrow focus of things. So I'm gonna ressurect this soon.
+
+<p class="full-measure paragraph"><a class="button-link opposite" href="https://make100things.com" target="_blank">See make 100 things</a></p>
