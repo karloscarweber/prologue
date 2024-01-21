@@ -169,7 +169,6 @@ if (menubutton != undefined) {
 	menubutton.addEventListener("click", nudge_main, false);
 }
 
-
 let price_message_monthly = "<strong>50</strong> hours dedicated to your projects monthly.<br>iOS, Ruby, and Web."
 let price_message_quarterly = "<strong>50</strong> hours dedicated to your projects monthly.<br> iOS, Ruby, and Web.<br>Interface Design.<br><strong>$1000 per month savings</strong>"
 let price_title_monthly = "$7,499/<span>month</span>"

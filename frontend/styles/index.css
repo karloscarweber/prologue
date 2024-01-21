@@ -5,7 +5,7 @@
 @import 'components';
 
 body {
-  /* background: var(--body-background); */
+  background: var(--body-background);
   color: var(--silver-color);
   font-family: BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
@@ -15,12 +15,9 @@ body {
   line-height: 1.5;
 }
 body.reg-layout {
-  /* background: var(--silver-color); */
-  background: #FFF9EE;
-  /* background: white; */
+  background: var(--silver-color);
   color: black;
 }
-
 a {
   color: var(--action-color);
   text-decoration: underline;
@@ -29,8 +26,6 @@ a {
 a:hover {
   text-decoration:none;
 }
-
-
 
 main {
   display:initial;
