@@ -118,8 +118,6 @@ main {
 	}
 }
 
-
-
 /* Components */
 
 .button {
@@ -467,15 +465,40 @@ body.reg-layout .price-card.outlined p, body.reg-layout .price-card.outlined h3 
 /* }  */
 
 /* The White thing. */
-.patterned-row .title-logo, .patterned-row .excerpt { /* Used for the logo in the header. */
+.patterned-row .title-logo,
+.patterned-row .excerpt { /* Used for the logo in the header. */
 	color: var(--darkened-color);
 	opacity: 1.0;
 	z-index: 1000;
 }
 
-body.freelance-page > nav, body.freelance-page > header {
-	display:none;
+body.freelance-page > nav.home-nav {
+	position:fixed;
+	z-index: 10000;
+	width: 100%;
 }
+body.freelance-page > nav.home-nav ul {
+	padding-right:2rem;
+	justify-content: right;
+}
+body.freelance-page > nav.home-nav a {
+	color: white;
+	background-color:transparent;
+	padding:0.5rem 2rem;
+	border-radius:50px;
+	border-color:white;
+	border-style:solid;
+	border-width:3px;
+	-webkit-transition: all 0.3s 0s ease;
+	-moz-transition: all 0.3s 0s ease;
+	-o-transition: all 0.3s 0s ease;
+	transition: all 0.3s 0s ease;
+}
+body.freelance-page > nav.home-nav a:hover {
+	background-color:white;
+	color:black;
+}
+
 
 /* Designer Row */
 .designer-row {

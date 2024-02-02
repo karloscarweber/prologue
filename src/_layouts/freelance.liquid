@@ -5,7 +5,12 @@
 		{% render "head", metadata: site.metadata, title: resource.data.title, summary_image: resource.summary_image, twitter_card_type: resource.twitter_card_type %}
 	</head>
 	<body class="freelance-page {{ resource.data.layout }} {{ resource.data.page_class }}">
-		{% render "navbar", metadata: site.metadata, resource: resource %}
+
+		<nav class="home-nav">
+			<ul>
+				<li><a href="{{ '/menu' | relative_url }}">Menu</a></li>
+			</ul>
+		</nav>
 
 		<main class="item-main">
 			{{ content }}

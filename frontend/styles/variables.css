@@ -8,9 +8,7 @@
 	--off-black-color: #0D081D;
 	--darkened-color: #1B073F;
 	--action-color: #C5F13F;
-	--silver-color: #E7E7E7; /* Old Silver */
-	--silver-color: #F5F5F5;
-	--silver-color: #FFF;
+	--silver-color: #EFEFEF;
 	--off-white-cream-color: #FFF4E1;
 	--stone-color: #B4BCCA;
 
@@ -34,10 +32,6 @@
 		--off-black-color:color(display-p3 0.051 0.031 0.113 / 1);
 		--darkened-color:color(display-p3 0.106 0.027 0.247 / 1);
 		--action-color: color(display-p3 0.772 0.945 0.247 / 1);
-		--silver-color: color(display-p3 0.905 0.905 0.905 / 1); /* Old silver */
-		--silver-color: color(display-p3 0.960 0.960 0.960 / 1); /* Old silver */
-		--silver-color: color(display-p3 1.0 1.0 1.0 / 1); /* Old silver */
-		/*--silver-color: color(display-p3 1.000 0.957 0.882 / 1);*/
 		--off-white-cream-color: color(display-p3 1.0 0.957 0.882 / 1);
 		--stone-color: color(display-p3 0.705 0.737 0.792 / 1);
 
@@ -48,7 +42,6 @@
 		--pr-brand-midnight:  color(display-p3 0.353 0.00 0.706 / 1);
 
 		--action-color: var(--pr-brand-apricot);
-		/* --stone-color: var(--pr-brand-midnight); */
 
 		--deep-red: color(display-p3 1.0 0.00 0.345 / 1);
 		--swift-orange: color(display-p3 0.875 0.365 0.263 / 1);

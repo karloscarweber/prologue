@@ -1,10 +1,7 @@
 <footer class="item-footer">
-  <p><a id="action-contact-us" href="mailto:{{ metadata.email }}">Contact us</a></p>
   <ul>
-    <li><a href="/home">Home</a></li>
-    <li><a href="/about">About</a></li>
-    <li><a href="/services">Services</a></li>
-    <li><a href="/">Freelance</a></li>
-    <li><a href="/pricing">Pricing</a></li>
+    <li><a href="/">Home</a></li>
+    <li><a href="{{ '/about' | relative_url }}">About</a></li>
+    <li><a id="action-say-hello" href="mailto:{{ metadata.email }}">Contact</a></li>
   </ul>
 </footer>

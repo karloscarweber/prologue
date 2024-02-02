@@ -32,6 +32,11 @@
 
 .row.darkened    { background-color: var(--darkened-color); }
 .row.really-dark { background-color: var(--off-black-color); }
+.row.brightened  { background-color: var(--silver-color); }
+
+/* Brightened row stuff */
+.row.brightened h2,
+.row.brightened p { color: var(--darkened-color); }
 
 /* Giving sections flexbox columns*/
 .columned {

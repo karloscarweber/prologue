@@ -220,36 +220,48 @@ if (sun != undefined) {
 
 /* Interaction observer for the doohickey */
 services_box = document.getElementById('services_box');
-services_box.prevRatio = 0;
-let services_reveal = (entries, observer) => {
-	entries.forEach((entry) => {
-		if (entry.intersectionRatio > services_box.prevRatio) {
-			services_box.classList.add('active')
-		} else {
-			services_box.classList.remove('active')
-		}
-		services_box.prevRatio = entry.intersectionRatio;
-	});
-}
-/* active */
-if (services_box != undefined) {
-	let observer = new IntersectionObserver(services_reveal, {threshold: 0.25});
-	observer.observe(services_box)
+if (services_box != null) {
+	services_box.prevRatio = 0;
+	let services_reveal = (entries, observer) => {
+		entries.forEach((entry) => {
+			if (entry.intersectionRatio > services_box.prevRatio) {
+				services_box.classList.add('active')
+			} else {
+				services_box.classList.remove('active')
+			}
+			services_box.prevRatio = entry.intersectionRatio;
+		});
+	}
+	/* active */
+	if (services_box != undefined) {
+		let observer = new IntersectionObserver(services_reveal, {threshold: 0.25});
+		observer.observe(services_box)
+	}
 }
 
 /* Interaction observer for the bullet points stuff */
 measured_process = document.getElementById('measured');
-measured_process.prevRatio = 0;
-let points_reveal = (entries, observer) => {
-	entries.forEach((entry) => {
-		if (entry.intersectionRatio > measured_process.prevRatio) {
-			measured_process.classList.add('visible')
-		}
-		measured_process.prevRatio = entry.intersectionRatio;
-	});
+if (measured_process != null) {
+	measured_process.prevRatio = 0;
+	let points_reveal = (entries, observer) => {
+		entries.forEach((entry) => {
+			if (entry.intersectionRatio > measured_process.prevRatio) {
+				measured_process.classList.add('visible')
+			}
+			measured_process.prevRatio = entry.intersectionRatio;
+		});
+	}
+	/* active */
+	if (measured_process != undefined) {
+		let observer = new IntersectionObserver(points_reveal, {threshold: 0.75});
+		observer.observe(measured_process)
+	}
 }
-/* active */
-if (measured_process != undefined) {
-	let observer = new IntersectionObserver(points_reveal, {threshold: 0.75});
-	observer.observe(measured_process)
+
+var ticker = document.querySelector('.ticker')
+	, list = document.querySelector('.ticker__list');
+
+if (list != null) {
+	var clone = list.cloneNode(true)
+	ticker.append(clone)
 }

@@ -121,7 +121,6 @@ export let parallaxController;
 		if(paralaxxed.length > 0) {
 			parallaxate(that.paralaxxed, paralaxxedsettings);
 		}
-		console.info('parallaxy started')
 		scrollHandler();
 	}
 
