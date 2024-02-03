@@ -10,8 +10,7 @@ summary_image: images/summary_images/prologue_1.png
 	<p class="flavor-text-2">A sellsword of the highest quality</p>
 	<p class="ostentatious-font ta-center">FREELANCER</p>
 </div> -->
-
-<div class="row darkened vertically-padded reaches-top" style="box-sizing:border-box;min-height:100vh;position:relative;z-index:1000; overflow:hidden;" >
+<div class="row darkened vertically-padded reaches-top contains-rainbow" style="" >
 	<section class=" widescreen padded-section">
 		<div class="full-measure" style="position:relative;z-index:1000;" >
 			<h2 class="heading-one ta-left" style="margin-top:2rem;">Prologue is<br> an Engineering Studio</h2>

@@ -139,7 +139,7 @@ show_hide_menu = function() {
 	}
 	window.requestAnimationFrame( show_hide_menu );
 }
-if (stopper != undefined) {
+if (stopper != undefined && menu != undefined) {
 	show_hide_menu()
 }
 

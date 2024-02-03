@@ -524,6 +524,10 @@ sun:after:after {
 .bar .upc div:nth-child(14) {width: 8px;}
 .bar .upc div:last-child   {width: 20px; margin-right: 24px;}
 
+@media (max-width: 500px) {
+	.bar .upc div {display:none;}
+}
+
 /* Ticker */
 @keyframes ticker_anim {
 	100% {
@@ -596,7 +600,6 @@ body.reg-layout.page.menu .item-main {
 	border-radius: 17px;
 }
 
-
 .portfolio-text {
 	font-size:1.5rem;
 	color:black;
@@ -613,4 +616,17 @@ body.reg-layout.page.menu .item-main {
 	display: inline-block;
 	padding: 0rem 1.25rem;
 	border-radius: 100px;
+}
+
+.contains-rainbow {
+	box-sizing: border-box;
+	min-height: 100vh;
+	position: relative;
+	z-index: 1000;
+	overflow: hidden;
+}
+@media (max-width: 500px) {
+	.contains-rainbow {
+		margin-top: -2rem;
+	}
 }
